@@ -32,7 +32,8 @@ import sys
 #inputDir = '/gwteraz/users/brivio/SKIMMED_7Feb2019/SKIM_DY_NLO'
 #inputDir = '/gwteraz/users/dzuolo/HHbbtautauAnalysis/SKIMMED_secondLookSkims_deepFlavor/SKIM_DY_NLO'
 #inputDir = '/gwteraz/users/dzuolo/HHbbtautauAnalysis/SKIMMED_secondLookSkims_deepCSV/SKIM_DY_NLO'
-inputDir = '/gwteraz/users/dzuolo/HHbbtautauAnalysis/SKIMMED_secondLookSkims_deepFlavor/SKIM_DY_NLO'
+#inputDir = '/gwteraz/users/dzuolo/HHbbtautauAnalysis/SKIMMED_secondLookSkims_deepFlavor/SKIM_DY_NLO'
+inputDir = '/home/llr/cms/motta/SKIMS_Legacy2018/SKIMS_mc_14Feb2020/SKIM_DY'
 
 ############################################################################################################
 ## NOTE: this script takes about 11 mins for a full DY sample (inclusive + NJet + NBJet)
@@ -41,7 +42,7 @@ inputDir = '/gwteraz/users/dzuolo/HHbbtautauAnalysis/SKIMMED_secondLookSkims_dee
 print "... processing directory", inputDir
 
 if inputDir[-1] == '/':
-    inputDir = inputDir[:-1] 
+    inputDir = inputDir[:-1]
 
 inputList = inputDir + '/' + 'goodfiles.txt'
 if not os.path.isfile(inputList):
