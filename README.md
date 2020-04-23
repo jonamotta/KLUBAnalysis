@@ -8,7 +8,13 @@ cmsrel CMSSW_10_2_16
 cd CMSSW_10_2_16/src
 cmsenv
 
-git clone https://github.com/bvormwald/HHKinFit2
+# DNN packages
+git clone git@github.com:GilesStrong/cms_hh_proc_interface.git
+git clone git@github.com:GilesStrong/cms_hh_tf_inference.git
+git clone git@github.com:GilesStrong/cms_runII_dnn_models.git
+
+# KinFit and Combine packages
+git clone git@github.com:llrcms/hhkinfit2.git -b bbtautau_LegacyRun2
 git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 cd HiggsAnalysis/CombinedLimit
 git checkout v8.0.1
@@ -17,7 +23,6 @@ cd -
 scram b -j8
 
 cd HHKinFit2/
-git checkout tags/v1.1.0
 ln -ns interface include
 source setup.sh
 ./compile.sh
