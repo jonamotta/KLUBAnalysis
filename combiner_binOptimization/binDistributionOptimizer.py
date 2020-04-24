@@ -231,15 +231,15 @@ df_flatB = pd.DataFrame(index=selections, columns=['optimal-2', 'optimal-1', 'op
 for index in df_flatB.index.values:
     for column in df_flatB.columns.values:
         df_flatB[column][index] = []
-# Quantile
-df_Quantile = pd.DataFrame(index=selections, columns=['optimal-2', 'optimal-1', 'optimal', 'optimal+1', 'optimal+2'])
-for index in df_Quantile.index.values:
-    for column in df_Quantile.columns.values:
-        df_Quantile[column][index] = []
+# FlatSB
+df_flatSB = pd.DataFrame(index=selections, columns=['optimal-2', 'optimal-1', 'optimal', 'optimal+1', 'optimal+2'])
+for index in df_flatSB.index.values:
+    for column in df_flatSB.columns.values:
+        df_flatSB[column][index] = []
 
 
 #########################################################################
-# INSIDE THIS LOOP WE FILL THE DFs FOR ConstSize, FlatS, FlatB, Quantile
+# INSIDE THIS LOOP WE FILL THE DFs FOR ConstSize, FlatS, FlatB, FlatSB
 for select in selections:
     # there is no iterative way of accessing these histos becase python does not know how to use += for the TH1Fs
     hSgn = inRoot.Get("GGHHSM_{0}_SR_{1}".format(select,variable))
@@ -384,44 +384,44 @@ for select in selections:
     del template, bins_window
 
     ###########################################
-    # Quantile (BDToutSM_kl_1 flat in sgn+bkg)
+    # FlatSB (BDToutSM_kl_1 flat in sgn+bkg)
     template = hSgn + hBkg
     integral = float(template.Integral())
     axis = template.GetXaxis()
     if select == 's2b0jresolvedMcut': bins_window = windows[0]
     if select == 'sboostedLLMcut': bins_window = windows[1]
     k = 0
-    for column in df_Quantile.columns.values:
+    for column in df_flatSB.columns.values:
         y = 0
-        df_Quantile[column][select].append(-1.)
+        df_flatSB[column][select].append(-1.)
         for i in range(template.GetNbinsX()):
             y += float(template.GetBinContent(i))
             if y > integral/float(bins_window[k]):
                 if abs(y - integral/float(bins_window[k])) < abs(y - float(template.GetBinContent(i)) - integral/float(bins_window[k])):
-                    df_Quantile[column][select].append(axis.GetBinLowEdge(i+1))
+                    df_flatSB[column][select].append(axis.GetBinLowEdge(i+1))
                 else:
-                    df_Quantile[column][select].append(axis.GetBinLowEdge(i))
+                    df_flatSB[column][select].append(axis.GetBinLowEdge(i))
                 y = 0
-        df_Quantile[column][select].append(1.)
+        df_flatSB[column][select].append(1.)
         # it could happen that the algorithm above produces 1/2 bins less then expected due to the acculmulation of the error in the quantile calculation
         # we correct for that by dividing the first bin in 2/3 to adjust the number of bins
-        if len(df_Quantile[column][select]) - (bins_window[k]+1) == -1: # if only one bin is missing split the first in two equal size bins
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,(df_Quantile[column][select][0]+df_Quantile[column][select][1])/2)
-        elif len(df_Quantile[column][select]) - (bins_window[k]+1) == -2: # if two bins are missing spit the first in three equal size bins
-            step = abs(df_Quantile[column][select][0]-df_Quantile[column][select][1])/3.
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,df_Quantile[column][select][0]+2*step)
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,df_Quantile[column][select][0]+step)
-            print("** Quantile "+select+" 2BIN CORRECTION DONE **")
-        elif len(df_Quantile[column][select]) - (bins_window[k]+1) == -3: # if three bins are missing spit the first in three equal size bins
-            step = abs(df_Quantile[column][select][0]-df_Quantile[column][select][1])/4.
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,df_Quantile[column][select][0]+3*step)
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,df_Quantile[column][select][0]+2*step)
-            df_Quantile[column][select] = np.insert(df_Quantile[column][select],1,df_Quantile[column][select][0]+step)
-            print("** Quantile "+select+" 3BIN CORRECTION DONE **")
-        elif len(df_Quantile[column][select]) - (bins_window[k]+1) <= -4:
-            print("** THE Quantile "+select+" ALGORITHM HAS PRODUCED A NUMBER OF BINS CONSIDERABLY SMALLER THAN EXPECTED: "+str(len(df_Quantile[column][select])-1)+" INSTEAD OF "+str(column).replace('_',' ')+" **")
+        if len(df_flatSB[column][select]) - (bins_window[k]+1) == -1: # if only one bin is missing split the first in two equal size bins
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,(df_flatSB[column][select][0]+df_flatSB[column][select][1])/2)
+        elif len(df_flatSB[column][select]) - (bins_window[k]+1) == -2: # if two bins are missing spit the first in three equal size bins
+            step = abs(df_flatSB[column][select][0]-df_flatSB[column][select][1])/3.
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,df_flatSB[column][select][0]+2*step)
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,df_flatSB[column][select][0]+step)
+            print("** FlatSB "+select+" 2BIN CORRECTION DONE **")
+        elif len(df_flatSB[column][select]) - (bins_window[k]+1) == -3: # if three bins are missing spit the first in three equal size bins
+            step = abs(df_flatSB[column][select][0]-df_flatSB[column][select][1])/4.
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,df_flatSB[column][select][0]+3*step)
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,df_flatSB[column][select][0]+2*step)
+            df_flatSB[column][select] = np.insert(df_flatSB[column][select],1,df_flatSB[column][select][0]+step)
+            print("** FlatSB "+select+" 3BIN CORRECTION DONE **")
+        elif len(df_flatSB[column][select]) - (bins_window[k]+1) <= -4:
+            print("** THE FlatSB "+select+" ALGORITHM HAS PRODUCED A NUMBER OF BINS CONSIDERABLY SMALLER THAN EXPECTED: "+str(len(df_flatSB[column][select])-1)+" INSTEAD OF "+str(column).replace('_',' ')+" **")
             print("** SUBSTITUTING BINS WITH CONSTANT WIDTH BINS **")
-            df_Quantile[column][select] = df_ConstSize[column][select]
+            df_flatSB[column][select] = df_ConstSize[column][select]
         k += 1
     # delete the variables to avoid strange things happening at the next round of the select loop
     del template, bins_window
@@ -433,7 +433,7 @@ for select in selections:
 # mode_str STRINGS FOR THE HPlimit_extraction FUNCTION ARE:
 # FlatS
 # FlatB
-# Quantile
+# FlatSB
 # ConstSize
 
 # create the folders that will contain all the results
@@ -446,7 +446,7 @@ os.system(mkdir_cmd1)
 mkdir_cmd2 = "mkdir DistribScanSteps/FlatB"
 print("Executing: "+mkdir_cmd2)
 os.system(mkdir_cmd2)
-mkdir_cmd3 = "mkdir DistribScanSteps/Quantile"
+mkdir_cmd3 = "mkdir DistribScanSteps/FlatSB"
 print("Executing: "+mkdir_cmd3)
 os.system(mkdir_cmd3)
 mkdir_cmd4 = "mkdir DistribScanSteps/ConstSize"
@@ -454,7 +454,7 @@ print("Executing: "+mkdir_cmd4)
 os.system(mkdir_cmd4)
 
 # create a single dataframe that will contain all the results of the distribution scan
-df_results = pd.DataFrame(index=['ConstSize', 'FlatS', 'FlatB', 'Quantile'],columns=['{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[0],bins_window_boosted[0]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[1],bins_window_boosted[1]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[2],bins_window_boosted[2]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[3],bins_window_boosted[3]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[4],bins_window_boosted[4])])
+df_results = pd.DataFrame(index=['ConstSize', 'FlatS', 'FlatB', 'FlatSB'],columns=['{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[0],bins_window_boosted[0]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[1],bins_window_boosted[1]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[2],bins_window_boosted[2]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[3],bins_window_boosted[3]),'{0}_2b0j/{1}_boosted'.format(bins_window_2b0j[4],bins_window_boosted[4])])
 # fill it
 k = 0
 for (nBins_2b0j,nBins_boosted) in zip(bins_window_2b0j,bins_window_boosted):
@@ -466,9 +466,10 @@ for (nBins_2b0j,nBins_boosted) in zip(bins_window_2b0j,bins_window_boosted):
     df_results['{0}_2b0j/{1}_boosted'.format(nBins_2b0j,nBins_boosted)]['ConstSize'] = HPlimit_extraction(bins_window_2b0j[k],bins_window_boosted[k],df_ConstSize[column]['s2b0jresolvedMcut'],df_ConstSize[column]['sboostedLLMcut'],'ConstSize')*1000.
     df_results['{0}_2b0j/{1}_boosted'.format(nBins_2b0j,nBins_boosted)]['FlatS'] = HPlimit_extraction(bins_window_2b0j[k],bins_window_boosted[k],df_flatS[column]['s2b0jresolvedMcut'],df_flatS[column]['sboostedLLMcut'],'FlatS')*1000.
     df_results['{0}_2b0j/{1}_boosted'.format(nBins_2b0j,nBins_boosted)]['FlatB'] = HPlimit_extraction(bins_window_2b0j[k],bins_window_boosted[k],df_flatB[column]['s2b0jresolvedMcut'],df_flatB[column]['sboostedLLMcut'],'FlatB')*1000.
-    df_results['{0}_2b0j/{1}_boosted'.format(nBins_2b0j,nBins_boosted)]['Quantile'] = HPlimit_extraction(bins_window_2b0j[k],bins_window_boosted[k],df_Quantile[column]['s2b0jresolvedMcut'],df_Quantile[column]['sboostedLLMcut'],'Quantile')*1000.
+    df_results['{0}_2b0j/{1}_boosted'.format(nBins_2b0j,nBins_boosted)]['FlatSB'] = HPlimit_extraction(bins_window_2b0j[k],bins_window_boosted[k],df_flatSB[column]['s2b0jresolvedMcut'],df_flatSB[column]['sboostedLLMcut'],'FlatSB')*1000.
     k += 1
 
+df_results.rename(index={'FlatSB':'FlatS+B'})
 df_results.to_html('DistribScanSteps/distribScanResults.html')
 
 
@@ -515,14 +516,14 @@ df_results.to_html('DistribScanSteps/distribScanResults.html')
 #print("-> "+str(len(df_flatB['optimal+2']['sboostedLLMcut'])))
 #print('\nFLAT S+B')
 #print("resolved")
-#print("-> "+str(len(df_Quantile['optimal-2']['s2b0jresolvedMcut'])))
-#print("-> "+str(len(df_Quantile['optimal-1']['s2b0jresolvedMcut'])))
-#print("-> "+str(len(df_Quantile['optimal']['s2b0jresolvedMcut'])))
-#print("-> "+str(len(df_Quantile['optimal+1']['s2b0jresolvedMcut'])))
-#print("-> "+str(len(df_Quantile['optimal+2']['s2b0jresolvedMcut'])))
+#print("-> "+str(len(df_flatSB['optimal-2']['s2b0jresolvedMcut'])))
+#print("-> "+str(len(df_flatSB['optimal-1']['s2b0jresolvedMcut'])))
+#print("-> "+str(len(df_flatSB['optimal']['s2b0jresolvedMcut'])))
+#print("-> "+str(len(df_flatSB['optimal+1']['s2b0jresolvedMcut'])))
+#print("-> "+str(len(df_flatSB['optimal+2']['s2b0jresolvedMcut'])))
 #print("boosted")
-#print("-> "+str(len(df_Quantile['optimal-2']['sboostedLLMcut'])))
-#print("-> "+str(len(df_Quantile['optimal-1']['sboostedLLMcut'])))
-#print("-> "+str(len(df_Quantile['optimal']['sboostedLLMcut'])))
-#print("-> "+str(len(df_Quantile['optimal+1']['sboostedLLMcut'])))
-#print("-> "+str(len(df_Quantile['optimal+2']['sboostedLLMcut'])))
+#print("-> "+str(len(df_flatSB['optimal-2']['sboostedLLMcut'])))
+#print("-> "+str(len(df_flatSB['optimal-1']['sboostedLLMcut'])))
+#print("-> "+str(len(df_flatSB['optimal']['sboostedLLMcut'])))
+#print("-> "+str(len(df_flatSB['optimal+1']['sboostedLLMcut'])))
+#print("-> "+str(len(df_flatSB['optimal+2']['sboostedLLMcut'])))
