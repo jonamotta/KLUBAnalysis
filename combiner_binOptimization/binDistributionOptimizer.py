@@ -174,6 +174,8 @@ channel = "ETau"
 #channel = "MuTau"
 #channel = "TauTau"
 
+print("** CHANNEL: {0} ** \n".format(channel))
+
 global datasets_dir
 datasets_dir = "/data_CMS/cms/motta/binOptDatasets"
 
