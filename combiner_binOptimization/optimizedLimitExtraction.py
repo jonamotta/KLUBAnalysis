@@ -109,7 +109,7 @@ def limit_extraction(nBins,new_bins_edges_dataframe):
         copy_cmd = "cp -a OptimizedLimit/{1}/mainCfg_{0} OptimizedLimit/; cp -a OptimizedLimit/{1}/selectionCfg_{0} OptimizedLimit/".format(tag,ch)
         print("Executing: "+copy_cmd)
         os.system(copy_cmd)
-    print("Finished wrapping")
+    print("** FINISHED WRAPPING **")
 
     # delete the first lines in makeCategories_optimized.sh with the old exports (by wrong we mean 'of the old iteration')
     # and re-write them in makeCategories_optimized.sh with the correct exports
