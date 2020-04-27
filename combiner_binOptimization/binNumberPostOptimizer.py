@@ -251,6 +251,8 @@ def limit_extraction(nBins,new_bins_edges_2b0j,new_bins_edges_boosted,new_bins_e
 #channel = "MuTau"
 channel = "TauTau"
 
+print("** CHANNEL: {0} ** \n".format(channel))
+
 global datasets_dir
 datasets_dir = "/data_CMS/cms/motta/binOptDatasets"
 
