@@ -145,6 +145,8 @@ def limit_extraction(nBins,new_bins_edges_dataframe):
 global channels
 channels = ["ETau", "MuTau", "TauTau"]
 
+print("** CHANNEL: {0} ** \n".format(channels))
+
 global datasets_dir
 datasets_dir = "/data_CMS/cms/motta/binOptDatasets"
 

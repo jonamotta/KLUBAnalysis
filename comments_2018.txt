@@ -1,0 +1,30 @@
+- #L79-93 what are the numbers? Elliptical cut? Where do they come from?
+
+- #L96-110 what is the stitch weighting? Legacy2016?
+
+- #L757 what does HHKonFit do?
+
+- #L767 what are HTMax and HTMin cutting on? (it has to do with the stitch)
+
+- #L979-980 what are this two? What file is it opening? Where are these files? (-> fct. definition #L134: what are the Trigger Counters?)
+
+- #L1038 which one we have to use? 94X or 102X?
+
+- #L1063 in the 2018 there is a dummy file!!!
+
+- #L1186 in the 2018 there are 2017 names
+
+- #L1242 in the 2018 there are 2017 names
+
+- #L1260 in the 2018 there are 2017 names
+
+- #L1278 in the 2018 there are 2017 names
+
+- #L2423-2429 correct the values for 2018 (the ones written now are the 2017 ones)
+
+- #L4415 dummy values
+
+- #L4438 which values have to be used?
+
+- #L
+
