@@ -1159,7 +1159,7 @@ int main (int argc, char** argv)
   tauMVAIDIdx.push_back(getTauIDIdx(hTauIDS, "byVTightIsolationMVArun2v1DBoldDMwLT"));
   if (find(tauMVAIDIdx.begin(), tauMVAIDIdx.end(), -1) != tauMVAIDIdx.end())
     {
-      cout << "** WARNING!! did not found some MVA tau IDs" << endl;
+      cout << "** WARNING!! did not find some MVA tau IDs" << endl;
       for (unsigned int i = 0; i < tauMVAIDIdx.size(); ++i)
 	cout << tauMVAIDIdx.at(i) << " " ;
       cout << endl;
@@ -1175,7 +1175,7 @@ int main (int argc, char** argv)
   tauMVAIDIdxNew.push_back(getTauIDIdx(hTauIDS, "byVTightIsolationMVArun2017v2DBoldDMwLT2017"));
   if (find(tauMVAIDIdxNew.begin(), tauMVAIDIdxNew.end(), -1) != tauMVAIDIdxNew.end())
     {
-      cout << "** WARNING!! did not found some MVA tau IDs New" << endl;
+      cout << "** WARNING!! did not find some MVA tau IDs New" << endl;
       for (unsigned int i = 0; i < tauMVAIDIdxNew.size(); ++i)
 	cout << tauMVAIDIdxNew.at(i) << " " ;
       cout << endl;
@@ -1190,7 +1190,7 @@ int main (int argc, char** argv)
   tauMVAIDIdxNewdR0p3.push_back(getTauIDIdx(hTauIDS, "byVTightIsolationMVArun2017v2DBoldDMdR0p3wLT2017"));
   if (find(tauMVAIDIdxNewdR0p3.begin(), tauMVAIDIdxNewdR0p3.end(), -1) != tauMVAIDIdxNewdR0p3.end())
     {
-      cout << "** WARNING!! did not found some MVA tau IDs New" << endl;
+      cout << "** WARNING!! did not find some MVA tau IDs New" << endl;
       for (unsigned int i = 0; i < tauMVAIDIdxNewdR0p3.size(); ++i)
 	cout << tauMVAIDIdxNewdR0p3.at(i) << " " ;
       cout << endl;
@@ -1203,7 +1203,7 @@ int main (int argc, char** argv)
   tauCUTIDIdx.push_back(getTauIDIdx(hTauIDS, "byTightCombinedIsolationDeltaBetaCorr3Hits"));
   if (find(tauCUTIDIdx.begin(), tauCUTIDIdx.end(), -1) != tauCUTIDIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < tauCUTIDIdx.size(); ++i)
 	cout << tauCUTIDIdx.at(i) << " " ;
       cout << endl;
@@ -1219,7 +1219,7 @@ int main (int argc, char** argv)
   tauAntiEleIdx.push_back(getTauIDIdx(hTauIDS, "againstElectronVTightMVA6"));
   if (find(tauAntiEleIdx.begin(), tauAntiEleIdx.end(), -1) != tauAntiEleIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < tauAntiEleIdx.size(); ++i)
 	cout << tauAntiEleIdx.at(i) << " " ;
       cout << endl;
@@ -1231,7 +1231,7 @@ int main (int argc, char** argv)
   tauAntiMuIdx.push_back(getTauIDIdx(hTauIDS, "againstMuonTight3"));
   if (find(tauAntiMuIdx.begin(), tauAntiMuIdx.end(), -1) != tauAntiMuIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < tauAntiMuIdx.size(); ++i)
 	cout << tauAntiMuIdx.at(i) << " " ;
       cout << endl;
@@ -1249,7 +1249,7 @@ int main (int argc, char** argv)
   deepTauVsJetIdx.push_back(getTauIDIdx(hTauIDS, "byVVTightDeepTau2017v2p1VSjet"));
   if (find(deepTauVsJetIdx.begin(), deepTauVsJetIdx.end(), -1) != deepTauVsJetIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < deepTauVsJetIdx.size(); ++i)
 	cout << deepTauVsJetIdx.at(i) << " " ;
       cout << endl;
@@ -1267,7 +1267,7 @@ int main (int argc, char** argv)
   deepTauVsEleIdx.push_back(getTauIDIdx(hTauIDS, "byVVTightDeepTau2017v2p1VSe"));
   if (find(deepTauVsEleIdx.begin(), deepTauVsEleIdx.end(), -1) != deepTauVsEleIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < deepTauVsEleIdx.size(); ++i)
 	cout << deepTauVsEleIdx.at(i) << " " ;
       cout << endl;
@@ -1281,7 +1281,7 @@ int main (int argc, char** argv)
   deepTauVsMuIdx.push_back(getTauIDIdx(hTauIDS, "byTightDeepTau2017v2p1VSmu"));
   if (find(deepTauVsMuIdx.begin(), deepTauVsMuIdx.end(), -1) != deepTauVsMuIdx.end())
     {
-      cout << "** WARNING!! did not found some cut-based tau IDs" << endl;
+      cout << "** WARNING!! did not find some cut-based tau IDs" << endl;
       for (unsigned int i = 0; i < deepTauVsMuIdx.size(); ++i)
 	cout << deepTauVsMuIdx.at(i) << " " ;
       cout << endl;

@@ -14,11 +14,7 @@ git clone git@github.com:GilesStrong/cms_hh_tf_inference.git
 git clone git@github.com:GilesStrong/cms_runII_dnn_models.git
 
 # KinFit and Combine packages
-<<<<<<< HEAD
 git clone git@github.com:LLRCMS/HHKinFit2.git -b bbtautau_LegacyRun2
-=======
-git clone git@github.com:llrcms/HHKinFit2.git -b bbtautau_LegacyRun2
->>>>>>> 932ec33ff16af4b542a5f5cfd9b0d5ed7b57aa62
 git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 cd HiggsAnalysis/CombinedLimit
 git checkout v8.0.1
@@ -56,7 +52,7 @@ make exe
 <details>
 
 
-## Instructions for 2017 Analysis 
+## Instructions for 2017 Analysis
 ```
 cmsrel CMSSW_9_0_0
 cd CMSSW_9_0_0/src
@@ -119,7 +115,7 @@ git clone https://github.com/camendola/KLUBAnalysis.git
 cd KLUBAnalysis
 mkdir interface/exceptions
 cd interface/exceptions
-ln -ns ../../../HHKinFit2/interface/exceptions/HHInvMConstraintException.h 
+ln -ns ../../../HHKinFit2/interface/exceptions/HHInvMConstraintException.h
 ln -ns ../../../HHKinFit2/interface/exceptions/HHEnergyRangeException.h
 ln -ns ../../../HHKinFit2/interface/exceptions/HHEnergyConstraintException.h
 cd -
@@ -133,7 +129,7 @@ make exe
 ```
 
 ## Installing
-``` 
+```
 cd /data_CMS/cms/govoni/CMSSW_7_4_3/src
 cmsenv
 git clone https://github.com/bvormwald/HHKinFit2
@@ -153,7 +149,7 @@ git clone https://github.com/LLRCMS/KLUBAnalysis
 cd KLUBAnalysis
 mkdir interface/exceptions
 cd interface/exceptions
-ln -ns ../../../HHKinFit2/interface/exceptions/HHInvMConstraintException.h 
+ln -ns ../../../HHKinFit2/interface/exceptions/HHInvMConstraintException.h
 ln -ns ../../../HHKinFit2/interface/exceptions/HHEnergyRangeException.h
 ln -ns ../../../HHKinFit2/interface/exceptions/HHEnergyConstraintException.h
 cd -
@@ -197,7 +193,7 @@ Output is located in:
 syncNtuples
 ```
 (output folder can be specified in config file)
- 
+
 ## Big ntuples skimming
 
 Example on how to submit a skimming.
@@ -210,10 +206,10 @@ Example on how to submit a skimming.
 python scripts/skimNtuple.py  \
  -s True -c  config/skim.cfg  -o /data_CMS/cms/govoni/test_submit_to_tier3/Skims5_SS/SKIM_WJet  \
  -i /data_CMS/cms/govoni/test_submit_to_tier3/HiggsTauTauOutput_WJets_-1Events_0Skipped_1437551416.48 \
- -x 61526.7 
-``` 
+ -x 61526.7
+```
 
-Example on how to check if all the jobs run successfully 
+Example on how to check if all the jobs run successfully
 (based on the presence of the "done" file for any failures at cluster level,
 and on the presence of "Error" in the log file for root problems,
 which sometimes arise.
@@ -230,11 +226,11 @@ To skim one sample:
 ```
 python scripts/skimNtuple.py -d True -s True -o /data_CMS/cms/govoni/test_submit_to_tier3/Skims3/SKIM_Data_SingleMuon     -i /data_CMS/cms/cadamuro/test_submit_to_tier3/HiggsTauTauOutput_Data_SingleMuon_-1Events_0Skipped_1437412858.02
 ```
-Once jobs are run to check whether there's files to be resubmitted, 
+Once jobs are run to check whether there's files to be resubmitted,
 ```
 python scripts/skimNtuple.py -r list -d True -s True -o /data_CMS/cms/govoni/test_submit_to_tier3/Skims3/SKIM_Data_SingleMuon     -i /data_CMS/cms/cadamuro/test_submit_to_tier3/HiggsTauTauOutput_Data_SingleMuon_-1Events_0Skipped_1437412858.02
 ```
-If there's any, actually resubmit, 
+If there's any, actually resubmit,
 ```
 python scripts/skimNtuple.py -r run -d True -s True -o /data_CMS/cms/govoni/test_submit_to_tier3/Skims3/SKIM_Data_SingleMuon     -i /data_CMS/cms/cadamuro/test_submit_to_tier3/HiggsTauTauOutput_Data_SingleMuon_-1Events_0Skipped_1437412858.02
 ```
@@ -248,22 +244,22 @@ python scripts/skimNtuple.py -H doit -d True -s True -o /data_CMS/cms/govoni/tes
 Example on how to draw plots of variables already existing in the skimmed ntuples.
 Plots are produced in the "plotter" folder, divided into a set with the proper normalisation
 according to the XS inserted in the processing, and one with shapes, where the backgrounds
-are combined according to the XS and then the total result is normalised, to compare to 
+are combined according to the XS and then the total result is normalised, to compare to
 the signal in shapes.
  * the config file ```plotter_muTau.cfg``` contains all the relevant information for the run
  * an additional ```plotter_muTau.cut``` contains the selections to be applied in the plots generation
 
 ```
-./bin/plotNEW.exe config/plotter_muTau.cfg 
+./bin/plotNEW.exe config/plotter_muTau.cfg
 ```
 
 The 2D plots are done with:
 ```
-./bin/plot2D.exe config/plotter_muTau.cfg 
+./bin/plot2D.exe config/plotter_muTau.cfg
 ```
 The config files for plotting are called config/plotter*cfg,
 and the corresponding cut sequences are config/plotter*cut.
-The request of having opposite sign candidates is in the selection sequence itself 
+The request of having opposite sign candidates is in the selection sequence itself
 for the plotting from the skims.
 This is not the case for the analysis sequence, though.
 
@@ -274,12 +270,12 @@ The TMVATraining.cpp executable uses the TMVATrainingClass to interface to the T
  * preselections are applied according to the cfg file
  * BDT training methods available
  * more training methods could be added copyting them from the TMVATrainingClass, which unfortunately does not work properly, since it would need a artisanal root patch which we don't want to do
- 
+
  ```
 ./bin/TMVATrainingZero.exe ./config/TMVATraining.cfg
 ```
 The MVA info is then added to the SKIM tree with:
 ```
-./bin/addTMVA.exe config/addTMVA.cfg 
+./bin/addTMVA.exe config/addTMVA.cfg
 ```
 </details>
