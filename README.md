@@ -14,7 +14,11 @@ git clone git@github.com:GilesStrong/cms_hh_tf_inference.git
 git clone git@github.com:GilesStrong/cms_runII_dnn_models.git
 
 # KinFit and Combine packages
+<<<<<<< HEAD
 git clone git@github.com:LLRCMS/HHKinFit2.git -b bbtautau_LegacyRun2
+=======
+git clone git@github.com:llrcms/HHKinFit2.git -b bbtautau_LegacyRun2
+>>>>>>> 932ec33ff16af4b542a5f5cfd9b0d5ed7b57aa62
 git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 cd HiggsAnalysis/CombinedLimit
 git checkout v8.0.1

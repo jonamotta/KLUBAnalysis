@@ -2,9 +2,16 @@
 
 - #L96-110 what is the stitch weighting? Legacy2016?
 
-- #L757 what does HHKonFit do?
+- #L759 what does HHKonFit do?
 
-- #L767 what are HTMax and HTMin cutting on? (it has to do with the stitch)
+- #L764-770 what are HTMax and HTMin cutting on? (it has to do with the stitch)
+
+- #L810-814 we initialise the values of the couplings by hand -> going on we never modify this and we only check that the values are >=-990 
+		-> is it because we are skimming and every skim is produced for a specific combination of couplings? 
+
+- #L836-845 how does the reweighing technique work?
+
+- #L906 what is the difference between reweighs and triggerbit+matching?
 
 - #L979-980 what are this two? What file is it opening? Where are these files? (-> fct. definition #L134: what are the Trigger Counters?)
 
