@@ -100,7 +100,7 @@ const float DYscale_MTT_vHighPt[3] = {0.820, 1.999  , 0.897  };
 ** - stitchWeight (0jet) = f_0 / (f_0 * N_inclusive)
 ** - stitchWeight (njet) = f_n / (f_n * N_inclusive + N_njets)
 */
-// Legacy2016 (23 Jan 2020) - These are not used in the skimming since the DY sample is already split in jet bins and the weight is included in the XS
+// Legacy2016 (23 Jan 2020) - to be updated before the next round of skimming
 const float stitchWeights [][5] = {
   {4.53527779613 , 0.0 , 0.0 , 0.0 , 0.0},
   {0.519441196235 , 0.518921151443 , 0.0 , 0.0 , 0.0},
@@ -2345,10 +2345,10 @@ int main (int argc, char** argv)
       double unc_MESup_second;
       double unc_MESdw_second;
 
-      unc_MESup_first = theBigTree.daughters_MESshiftup->at (firstDaughterIndex); // first daughter, DM 0
-      unc_MESdw_first = theBigTree.daughters_MESshiftdw->at (firstDaughterIndex); // first daughter, DM 0
-      unc_MESup_second = theBigTree.daughters_MESshiftup ->at (secondDaughterIndex); // second daughter, DM 0
-      unc_MESdw_second = theBigTree.daughters_MESshiftdw ->at (secondDaughterIndex); // second daughter, DM 0
+      unc_MESup_first = theBigTree.daughters_MESshiftup->at (firstDaughterIndex); // first daughter, up
+      unc_MESdw_first = theBigTree.daughters_MESshiftdw->at (firstDaughterIndex); // first daughter, down
+      unc_MESup_second = theBigTree.daughters_MESshiftup ->at (secondDaughterIndex); // second daughter, up
+      unc_MESdw_second = theBigTree.daughters_MESshiftdw ->at (secondDaughterIndex); // second daughter, down
 
       TLorentzVector tlv_firstLepton_muup    =tlv_firstLepton;
       TLorentzVector tlv_firstLepton_mudown  =tlv_firstLepton;
@@ -2422,39 +2422,6 @@ int main (int argc, char** argv)
 
           Long64_t trgNotOverlapFlag = (Long64_t) theBigTree.mothers_trgSeparateMatch->at(chosenTauPair);
           bool passTrg = trigReader.checkOR (pairType,triggerbit, &pass_triggerbit, matchFlag1, matchFlag2, trgNotOverlapFlag, goodTriggerType1, goodTriggerType2, tlv_firstLepton.Pt(), tlv_firstLepton.Eta(), tlv_secondLepton.Pt(), tlv_secondLepton.Eta()) ;
-
-          if(DEBUG)
-            {
-              cout << "L1 match for first daughter: " << theBigTree.daughters_highestEt_L1IsoTauMatched->at(firstDaughterIndex) << endl;
-              cout << "L1 match for second daughter: " << theBigTree.daughters_highestEt_L1IsoTauMatched->at(secondDaughterIndex) << endl;
-            }
-
-          // L1 match for 2017 data
-          //if (isMC) // Commented after March 2020 sync
-          //{
-            if (pairType == 2)
-              {
-                bool passL1IsoTau32 = false;
-                if (theBigTree.daughters_highestEt_L1IsoTauMatched->at(firstDaughterIndex) > 32 && theBigTree.daughters_highestEt_L1IsoTauMatched->at(secondDaughterIndex) > 32)
-                  {
-                    passL1IsoTau32 = true;
-                  }
-                if (!passL1IsoTau32) passTrg = false;
-              }
-          //}
-
-          // !! FIXME !! --> update the trigger bits to the right paths
-          // Weight to be applied for IsoMu24, prescaled for ~3fb-1 in 2017
-          // MuTau: if it didn't also pass IsoMu27 or MuTau trigger
-          if (pairType == 0 && isMC)
-            {
-                if (CheckBit(pass_triggerbit,0) && !CheckBit(pass_triggerbit,1) && !CheckBit(pass_triggerbit,7)) theSmallTree.m_prescaleWeight =  (41557. - 3625.) / 41557.;
-            }
-          // MuMu: if it didn't also pass IsoMu27
-          if (pairType == 3 && isMC)
-            {
-                if (CheckBit(pass_triggerbit,0) && !CheckBit(pass_triggerbit,1)) theSmallTree.m_prescaleWeight =  (41557. - 3625.) / 41557.;
-            }
 
           if(DEBUG)
             {
@@ -3638,7 +3605,7 @@ int main (int argc, char** argv)
               theSmallTree.m_bH_mass_raw_jetup.push_back((tlv_bH_raw_jetup[isource]).M());
               theSmallTree.m_bH_mass_raw_jetdown.push_back((tlv_bH_raw_jetdown[isource]).M());
               theSmallTree.m_bH_pt_raw_jetup.push_back((tlv_bH_raw_jetup[isource]).Pt());
-              theSmallTree.m_bH_pt_raw_jetdown.push_back((tlv_bH_raw_jetup[isource]).Pt());
+              theSmallTree.m_bH_pt_raw_jetdown.push_back((tlv_bH_raw_jetdown[isource]).Pt());
 
               // JER variations
               theSmallTree.m_bjet1_JER_jetup.push_back(bjet1_JER * tlv_firstBjet_raw_jetup[isource].E() /  tlv_firstBjet_raw.E() );
@@ -3712,17 +3679,17 @@ int main (int argc, char** argv)
           theSmallTree.m_bH_mass_raw_jetup10   = (tlv_bH_raw_jetup[9]).M();
           theSmallTree.m_bH_mass_raw_jetup11   = (tlv_bH_raw_jetup[10]).M();
 
-          theSmallTree.m_bH_mass_raw_jetup1    = (tlv_bH_raw_jetdown[0]).M();
-          theSmallTree.m_bH_mass_raw_jetup2    = (tlv_bH_raw_jetdown[1]).M();
-          theSmallTree.m_bH_mass_raw_jetup3    = (tlv_bH_raw_jetdown[2]).M();
-          theSmallTree.m_bH_mass_raw_jetup4    = (tlv_bH_raw_jetdown[3]).M();
-          theSmallTree.m_bH_mass_raw_jetup5    = (tlv_bH_raw_jetdown[4]).M();
-          theSmallTree.m_bH_mass_raw_jetup6    = (tlv_bH_raw_jetdown[5]).M();
-          theSmallTree.m_bH_mass_raw_jetup7    = (tlv_bH_raw_jetdown[6]).M();
-          theSmallTree.m_bH_mass_raw_jetup8    = (tlv_bH_raw_jetdown[7]).M();
-          theSmallTree.m_bH_mass_raw_jetup9    = (tlv_bH_raw_jetdown[8]).M();
-          theSmallTree.m_bH_mass_raw_jetup10   = (tlv_bH_raw_jetdown[9]).M();
-          theSmallTree.m_bH_mass_raw_jetup11   = (tlv_bH_raw_jetdown[10]).M();
+          theSmallTree.m_bH_mass_raw_jetdown1    = (tlv_bH_raw_jetdown[0]).M();
+          theSmallTree.m_bH_mass_raw_jetdown2    = (tlv_bH_raw_jetdown[1]).M();
+          theSmallTree.m_bH_mass_raw_jetdown3    = (tlv_bH_raw_jetdown[2]).M();
+          theSmallTree.m_bH_mass_raw_jetdown4    = (tlv_bH_raw_jetdown[3]).M();
+          theSmallTree.m_bH_mass_raw_jetdown5    = (tlv_bH_raw_jetdown[4]).M();
+          theSmallTree.m_bH_mass_raw_jetdown6    = (tlv_bH_raw_jetdown[5]).M();
+          theSmallTree.m_bH_mass_raw_jetdown7    = (tlv_bH_raw_jetdown[6]).M();
+          theSmallTree.m_bH_mass_raw_jetdown8    = (tlv_bH_raw_jetdown[7]).M();
+          theSmallTree.m_bH_mass_raw_jetdown9    = (tlv_bH_raw_jetdown[8]).M();
+          theSmallTree.m_bH_mass_raw_jetdown10   = (tlv_bH_raw_jetdown[9]).M();
+          theSmallTree.m_bH_mass_raw_jetdown11   = (tlv_bH_raw_jetdown[10]).M();
 
           // FIXME : here mass is manually set to 0, should we change it?
           float ptScale1 = ptRegr[0] / tlv_firstBjet.Pt() ;
@@ -5677,6 +5644,7 @@ int main (int argc, char** argv)
     delete readerVBF;
 
   } // End new BDT
+
 
   // NEW DNN
   bool computeDNN = (gConfigParser->isDefined("DNN::computeMVA") ? gConfigParser->readBoolOption("DNN::computeMVA") : false);

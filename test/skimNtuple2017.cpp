@@ -53,9 +53,9 @@
 #include <Math/PxPyPzM4D.h>
 
 // DNN
-#include "../../cms_hh_tf_inference/inference/interface/inf_wrapper.hh"
-#include "../../cms_hh_proc_interface/processing/interface/feat_comp.hh"
-#include "../../cms_hh_proc_interface/processing/interface/evt_proc.hh"
+//#include "../../cms_hh_tf_inference/inference/interface/inf_wrapper.hh"
+//#include "../../cms_hh_proc_interface/processing/interface/feat_comp.hh"
+//#include "../../cms_hh_proc_interface/processing/interface/evt_proc.hh"
 
 using namespace std ;
 using DNNVector = ROOT::Math::LorentzVector<ROOT::Math::PxPyPzM4D<float>>;
@@ -5680,6 +5680,7 @@ int main (int argc, char** argv)
 
   } // End new BDT
 
+/*
   // NEW DNN
   bool computeDNN = (gConfigParser->isDefined("DNN::computeMVA") ? gConfigParser->readBoolOption("DNN::computeMVA") : false);
   if (computeDNN)
@@ -5963,7 +5964,7 @@ int main (int argc, char** argv)
     in_file->Close();
 
   } // END NEW DNN
-
+*/
   cout << "... SKIM finished, exiting." << endl;
   return 0 ;
 }
