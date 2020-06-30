@@ -1,0 +1,84 @@
+# Datacard produced by CombineHarvester with git status: analysis-HIG-16-006-freeze-080416-806-g6af279a-dirty
+imax    1 number of bins
+jmax    4 number of processes minus 1
+kmax    * number of nuisance parameters
+--------------------------------------------------------------------------------
+shapes * VBFtightMcut hh_3_C5_LggHH_bbtt11_13TeV.input.root VBFtightMcut/$PROCESS VBFtightMcut/$PROCESS_$SYSTEMATIC
+shapes ggHH_bbtt VBFtightMcut hh_3_C5_LggHH_bbtt11_13TeV.input.root VBFtightMcut/ggHH_bbtt$MASS VBFtightMcut/ggHH_bbtt$MASS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          VBFtightMcut    
+observation  17.0            
+--------------------------------------------------------------------------------
+bin                                                                  VBFtightMcut    VBFtightMcut    VBFtightMcut    VBFtightMcut    VBFtightMcut    
+process                                                              TT              DYtot           others          QCD             ggHH_bbtt       
+process                                                              1               2               3               4               0               
+rate                                                                 4.24563         3.232           0.672044        7.5898          5.74533         
+--------------------------------------------------------------------------------
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_DYtot_bin_21     shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_DYtot_bin_22     shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_DYtot_bin_7      shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_1        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_10       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_11       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_12       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_13       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_14       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_15       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_16       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_17       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_18       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_19       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_2        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_20       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_21       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_22       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_23       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_24       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_25       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_3        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_4        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_5        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_6        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_7        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_8        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_QCD_bin_9        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_1         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_10        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_11        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_12        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_13        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_14        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_16        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_17        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_2         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_20        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_22        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_23        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_3         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_5         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_6         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_8         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_TT_bin_9         shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_13 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_15 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_18 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_19 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_21 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_24 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_ggHH_bbtt_bin_25 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_TauTau_VBFtightMcut_13TeV_others_bin_4     shape   -               -               1               -               -               
+CMS_DY_SFUnc                                                 lnN     -               1.1             -               -               -               
+CMS_eff_btag                                                 lnN     1.03            1.04            1.03            1.03            1.02            
+CMS_eff_t                                                    lnN     1.1             1.1             1.1             1.1             1.1             
+CMS_scale_b                                                  lnN     1.02            1.02            1.02            1.02            1.02            
+HH_BR_Hbb                                                    lnN     -               -               -               -               1.026           
+HH_BR_Htt                                                    lnN     -               -               -               -               1.012/0.987     
+QCDscale_tt                                                  lnN     1.048/0.939     -               -               -               -               
+alphaS_ggHH                                                  lnN     -               -               -               -               1.021           
+lumi_13TeV                                                   lnN     1.025           1.025           1.025           1.025           1.025           
+mtop_ggHH                                                    lnN     -               -               -               -               1.021           
+pdf_ggHH                                                     lnN     -               -               -               -               1.022/0.95      
+top                                                          shape   1               -               -               -               -               
+theory group = HH_BR_Hbb HH_BR_Htt pdf_ggHH
+* autoMCStats 0 
+alpha rateParam VBFtightMcut QCD (@0*@1/@2) QCD_regB,QCD_regC,QCD_regD 

@@ -1,0 +1,56 @@
+Combination of hh_3_C3_LggHH_bbtt11_13TeV.txt
+imax 1 number of bins
+jmax 4 number of processes minus 1
+kmax 38 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *          ch1        hh_3_C3_LggHH_bbtt11_13TeV.input.root sboostedLLMcut/$PROCESS sboostedLLMcut/$PROCESS_$SYSTEMATIC
+shapes ggHH_bbtt  ch1        hh_3_C3_LggHH_bbtt11_13TeV.input.root sboostedLLMcut/ggHH_bbtt$MASS sboostedLLMcut/ggHH_bbtt$MASS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          ch1        
+observation  2          
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                                                                 ch1          ch1          ch1          ch1          ch1        
+process                                                                             ggHH_bbtt    TT           DYtot        QCD          others     
+process                                                                             0            1            2            3            4          
+rate                                                                                105.182      0.466348     3.117        1.1e-05      0.953041   
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_1   shape                   -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_12   shape                  -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_3   shape                   -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_4   shape                   -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_5   shape                   -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_DYtot_bin_6   shape                   -            -            1.0          -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_1   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_10   shape                    -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_11   shape                    -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_12   shape                    -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_2   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_3   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_4   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_5   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_6   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_7   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_8   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_QCD_bin_9   shape                     -            -            -            1.0          -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_1   shape               1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_10   shape              1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_11   shape              1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_7   shape               1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_8   shape               1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_9   shape               1.0          -            -            -            -          
+CMS_DNNoutSM_kl_1_TauTau_sboostedLLMcut_13TeV_others_bin_2   shape                  -            -            -            -            1.0        
+CMS_DY_SFUnc            lnN                                                         -            -            1.1          -            -          
+CMS_eff_btag            lnN                                                         1.02         1.03         1.04         1.03         1.03       
+CMS_eff_t               lnN                                                         1.1          1.1          1.1          1.1          1.1        
+CMS_scale_b             lnN                                                         1.02         1.02         1.02         1.02         1.02       
+HH_BR_Hbb               lnN                                                         1.012/0.987  -            -            -            -          
+HH_BR_Htt               lnN                                                         1.016        -            -            -            -          
+QCDscale_tt             lnN                                                         -            1.048/0.939  -            -            -          
+Rscale_ggHH             lnN                                                         1.022/0.95   -            -            -            -          
+alphaS_ggHH             lnN                                                         1.021        -            -            -            -          
+lumi_13TeV              lnN                                                         1.025        1.025        1.025        1.025        1.025      
+mtop_ggHH               lnN                                                         1.026        -            -            -            -          
+pdf_ggHH                lnN                                                         1.021        -            -            -            -          
+top                     shape                                                       -            1.0          -            -            -          
+theory group = HH_BR_Hbb pdf_ggHH HH_BR_Htt
+ch1 autoMCStats 0 0 1

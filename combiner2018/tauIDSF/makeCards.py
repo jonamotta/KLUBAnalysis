@@ -32,18 +32,22 @@ def makeSum (inFile, sumName, nameList, var, sel, reg):
 	histoList = retrieveHistos  (inFile, nameList, var, sel,reg)
 	hDY = getHisto("DY", histoList)
 	hTT = getHisto("TT", histoList)
-	#hWJets = getHisto("WJets", histoList)
-	hVVV = getHisto("tripleV",histoList)
-	hWJets = getHisto("WJets",histoList)
-	hVV = getHisto("doubleV", histoList)
-	hTTVV = getHisto("doubleTVV",histoList)
+	hWJets = getHisto("WJets", histoList)
 	hEWK = getHisto("EWK", histoList)
 	hsingleT = getHisto("singleT", histoList)
-	hsingleH = getHisto("singleH", histoList)
+	hVH = getHisto("VH",histoList)
+	httH = getHisto("ttH",histoList)
 	hTTV = getHisto("doubleTsingleV",histoList)
+	hTTVV = getHisto("doubleTVV",histoList)
+	hVV = getHisto("doubleV", histoList)
+	hVVV = getHisto("tripleV",histoList)
+	hDY_lowMass = getHisto("DY_lowMass",histoList)
+	hggH = getHisto("ggHTauTau",histoList)
+	hVBFH = getHisto("VBFHTauTau",histoList)
+
 
 	#hBkgList = [hothers, hWJets, hTT, hDY]
-	hBkgList = [hDY, hTT, hWJets, hEWK, hsingleT, hsingleH, hTTV, hTTVV, hVV, hVVV]
+	hBkgList = [hDY, hTT, hWJets, hEWK, hsingleT, hVH, httH, hTTV, hTTVV, hVV, hVVV, hDY_lowMass, hggH, hVBFH]
 	makeNonNegativeHistos (hBkgList)
 	for i,h in enumerate(hBkgList):
 		if i == 0: hsum = h.Clone(sumName)

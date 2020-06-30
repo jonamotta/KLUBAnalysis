@@ -1,8 +1,11 @@
 #!/bin/bash
 export TAG="optimized"
 export CF="$CMSSW_BASE/src/KLUBAnalysis/combiner_binOptimization/OptimizedLimit/"
-export LEPTONS="ETau MuTau TauTau"
+export LEPTONS="ETau MuTau TauTau "
 export SELECTIONS="s2b0jresolvedMcut sboostedLLMcut s1b1jresolvedMcut VBFlooseMcut VBFtightMcut"
+export YEAR="2018"
+export VAR="DNNoutSM_kl_1"
+
 
 # ggHH_bbtt IS THE OLD NAME FOR SM PRODUCTION OF THE HH PAIR
 export NAMESAMPLE="ggHH_bbtt"
@@ -25,7 +28,7 @@ if [ "${RESONANT}" != "-r" ]
 		#done
 		# IF WE ARE NOT DOING A SCAN, BUT WE ARE DOING ONLY THE SM CASE, UNCOMMENT THE FOLLOWING TWO LINES AND COMMENT THE FOR ABOVE
 		export LAMBDAS="11"
-		export VARIABLES="BDToutSM_kl_1"
+		export VARIABLES=${VAR}
 fi
 
 export QUANTILES="0.025 0.16 0.5 0.84 0.975 -1.0"
@@ -55,7 +58,7 @@ do
 								continue
 						fi
 				fi
-				python chcardMaker.py -f ${CF}analyzedOutPlotter_${c}.root -o "_${TAG}" -c ${c} -y -s ${BASE} ${RESONANT} -u 1 -t -p ${CF}
+				python chcardMaker.py -f ${CF}analyzedOutPlotter_${c}.root -o "_${TAG}" -c ${c} -y -s ${BASE} ${RESONANT} -u 1 -t -p ${CF} --year ${YEAR} --var ${VAR}
 		done
 done
 echo " "
@@ -96,7 +99,7 @@ do
 						fi
 
 						echo ${CF}/cards_${c}_${TAG}/${NAMESAMPLE}${i}${BASE}${arrVARIABLES[0]}
-						cd ${CF}/cards_${c}_${TAG}/${NAMESAMPLE}${i}${BASE}${arrVARIABLES[0]} #---------------------------- cfr. THIS WITH LINE 78 OF chcardMaker.py TO SEE HOW TO CREATE/CALL CORRECTLY
+						cd ${CF}/cards_${c}_${TAG}/${NAMESAMPLE}${i}${BASE}${arrVARIABLES[0]}
 						pwd
 						combineCards.py -S hh_*.txt &> comb.txt
 						text2workspace.py comb.txt -m ${i} -o comb.root ;
@@ -180,7 +183,12 @@ do
 		# access the combined directory and create a single combination of all datacrads of all channels (does this for each mass point)
 		cd cards_Combined_${TAG}/${NAMESAMPLE}${i}${arrVARIABLES[0]}
 		rm comb.*
-		combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C5_L${NAMESAMPLE}${i}_13Te*.txt >> comb.txt
+		if [[ ${YEAR} != "2016" ]]
+		then
+				combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C5_L${NAMESAMPLE}${i}_13Te*.txt >> comb.txt
+		else
+				combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt >> comb.txt
+		fi
 		text2workspace.py -m ${i} comb.txt -o comb.root ;
 		ln -ns /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/combiner_binOptimization/prepareHybrid.py . # the f option forces to overwrite the link if it already exists
 		ln -ns /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/combiner_binOptimization/prepareGOF.py .
@@ -196,11 +204,16 @@ do
 
 		cd cards_${c}_${TAG}/${NAMESAMPLE}${i}${arrVARIABLES[0]}
 		rm comb.*
-		if [[ ${c} == "TauTau" ]]
+		if [[ ${YEAR} != "2016" ]]
 		then
-				combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C5_L${NAMESAMPLE}${i}_13Te*.txt>> comb.txt
+				if [[ ${c} == "TauTau" ]]
+				then
+						combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C5_L${NAMESAMPLE}${i}_13Te*.txt>> comb.txt
+				else
+						combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt>> comb.txt
+				fi
 		else
-				combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt>> comb.txt
+				combineCards.py -S hh_*_C1_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C2_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C3_L${NAMESAMPLE}${i}_13Te*.txt hh_*_C4_L${NAMESAMPLE}${i}_13Te*.txt >> comb.txt
 		fi
 
 		text2workspace.py -m ${i} comb.txt -o comb.root ;

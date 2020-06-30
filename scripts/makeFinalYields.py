@@ -25,6 +25,8 @@ if __name__ == "__main__" :
 					selName = "boosted SELECTION"
 			if "loose" in args.sel:
 					selName = "VBFloose SELECTION"
+			if "baseline" in args.sel:
+					selName = "baseline SELECTION"
 			yields_txt.write("YIELDS OF THE DIFFERENT PROCESSES FOR THE "+selName+"\n")
 			yields_txt.write("-----------------------------------------------------------------\n")
 

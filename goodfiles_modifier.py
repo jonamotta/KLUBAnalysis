@@ -1,5 +1,5 @@
 import os
-rootdir = "/data_CMS/cms/motta/SKIMS_Legacy2018/SKIMS_mc_14Feb2020/"
+rootdir = "/data_CMS/cms/motta/HHLegacy_SKIMS/SKIMS_Legacy2016/v2/SKIMMED_Legacy2016_6May2020/"
 
 for subdir, dirs, files in os.walk(rootdir):
     for file in files:
@@ -10,4 +10,4 @@ for subdir, dirs, files in os.walk(rootdir):
             os.system('rm '+os.path.join(subdir, file))
             new_txt = open(os.path.join(subdir, file),"w")
             for line in lines:
-                new_txt.write(line.replace("/home/llr/cms/motta/SKIMS_Legacy2018/SKIMS_mc_14Feb2020/", "/data_CMS/cms/motta/SKIMS_Legacy2018/SKIMS_mc_14Feb2020/"))
+                new_txt.write(line.replace("/gwteraz/users/brivio/", "/data_CMS/cms/motta/HHLegacy_SKIMS/SKIMS_Legacy2016/v2/"))

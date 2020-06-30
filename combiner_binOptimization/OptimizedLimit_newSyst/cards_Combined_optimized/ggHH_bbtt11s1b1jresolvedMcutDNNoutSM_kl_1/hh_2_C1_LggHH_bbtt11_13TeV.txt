@@ -1,0 +1,67 @@
+# Datacard produced by CombineHarvester with git status: analysis-HIG-16-006-freeze-080416-806-g6af279a-dirty
+imax    1 number of bins
+jmax    4 number of processes minus 1
+kmax    * number of nuisance parameters
+--------------------------------------------------------------------------------
+shapes * s1b1jresolvedMcut hh_2_C1_LggHH_bbtt11_13TeV.input.root s1b1jresolvedMcut/$PROCESS s1b1jresolvedMcut/$PROCESS_$SYSTEMATIC
+shapes ggHH_bbtt s1b1jresolvedMcut hh_2_C1_LggHH_bbtt11_13TeV.input.root s1b1jresolvedMcut/ggHH_bbtt$MASS s1b1jresolvedMcut/ggHH_bbtt$MASS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          s1b1jresolvedMcut 
+observation  10815.0         
+--------------------------------------------------------------------------------
+bin                                                                      s1b1jresolvedMcut s1b1jresolvedMcut s1b1jresolvedMcut s1b1jresolvedMcut s1b1jresolvedMcut 
+process                                                                  TT              DYtot           others          QCD             ggHH_bbtt       
+process                                                                  1               2               3               4               0               
+rate                                                                     6470.06         1966.18         2191.82         615.916         276.091         
+--------------------------------------------------------------------------------
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_DYtot_bin_11     shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_DYtot_bin_12     shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_DYtot_bin_9      shape   -               1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_1        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_10       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_11       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_12       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_13       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_14       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_15       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_16       shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_2        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_3        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_4        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_5        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_6        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_7        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_8        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_QCD_bin_9        shape   -               -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_TT_bin_13        shape   1               -               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_ggHH_bbtt_bin_11 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_ggHH_bbtt_bin_14 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_ggHH_bbtt_bin_15 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_ggHH_bbtt_bin_16 shape   -               -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_1     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_10    shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_12    shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_13    shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_3     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_4     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_5     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_6     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_7     shape   -               -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_s1b1jresolvedMcut_13TeV_others_bin_8     shape   -               -               1               -               -               
+CMS_DY_SFUnc                                                     lnN     -               1.1             -               -               -               
+CMS_eff_btag                                                     lnN     1.03            1.04            1.03            1.03            1.02            
+CMS_eff_m                                                        lnN     1.018           1.018           1.018           1.018           1.018           
+CMS_eff_t                                                        lnN     1.07            1.07            1.07            1.07            1.07            
+CMS_scale_b                                                      lnN     1.02            1.02            1.02            1.02            1.02            
+HH_BR_Hbb                                                        lnN     -               -               -               -               1.012/0.987     
+HH_BR_Htt                                                        lnN     -               -               -               -               1.016           
+QCDscale_tt                                                      lnN     1.048/0.939     -               -               -               -               
+Rscale_ggHH                                                      lnN     -               -               -               -               1.022/0.95      
+alphaS_ggHH                                                      lnN     -               -               -               -               1.021           
+lumi_13TeV                                                       lnN     1.025           1.025           1.025           1.025           1.025           
+mtop_ggHH                                                        lnN     -               -               -               -               1.026           
+pdf_ggHH                                                         lnN     -               -               -               -               1.021           
+top                                                              shape   1               -               -               -               -               
+theory group = HH_BR_Hbb HH_BR_Htt pdf_ggHH
+* autoMCStats 0 
+alpha rateParam s1b1jresolvedMcut QCD (@0*@1/@2) QCD_regB,QCD_regC,QCD_regD 

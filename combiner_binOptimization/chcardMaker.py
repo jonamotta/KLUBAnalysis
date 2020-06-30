@@ -29,6 +29,8 @@ def parseOptions():
 	parser.add_option('-t', '--theory',  action="store_true", dest='theory', help='add theory systematics')
 	parser.add_option('-u', '--shape', dest='shapeUnc', type='int', default=1, help='1:add 0:disable shape uncertainties')
 	parser.add_option('-p', '--path', dest='outPath', type='string', default='', help='path of output folder')
+	parser.add_option('--year', dest='year', type='string', default='2018', help='dataset year')
+	parser.add_option('--var', dest='var', type='string', default='BDToutSM_kl_1', help='variable to consider')
 
 	# store options and arguments as global variables
 	global opt, args
@@ -75,7 +77,8 @@ def  writeCard(input,theLambda,select,kLambda,region=-1):
 	if opt.isResonant:
 		variables.append('HHKin_mass_raw')
 	else:
-		variables.append('BDToutSM_kl_'+kLambda) # kLambda refers to the actual value of the kLambda under consideration in this iteration (SM == 1)
+		# kLambda refers to the actual value of the kLambda under consideration in this iteration (SM == 1)
+		variables.append('{0}'.format(opt.var.replace('1',''))+kLambda)
 
 	#out_dir = opt.outDir
 	theOutputDir = "{0}{1}{2}".format(theLambda,select,variables[0]) # theLambda refers to the 'index' of th kLambda value inside the kLambdas array (its just a position number, SM == 11)
@@ -154,19 +157,19 @@ def  writeCard(input,theLambda,select,kLambda,region=-1):
 
 	if region < 0:
 		#Systematics (I need to add by hand the shape ones)
-		syst = systReader("../config/systematics.cfg",[lambdaName],backgrounds,file)
+		syst = systReader("config/systematics.cfg",[lambdaName],backgrounds,file)
 		syst.writeOutput(False)
 		syst.verbose(True)
 		if(opt.channel == "TauTau" ):
-			syst.addSystFile("../config/systematics_tautau.cfg")
+			syst.addSystFile("config/systematics_tautau.cfg")
 			if("tight" in select):
-				syst.addSystFile("../config/systematics_VBFtight.cfg")
+				syst.addSystFile("config/systematics_VBFtight.cfg")
 		elif(opt.channel == "MuTau" ):
-			syst.addSystFile("../config/systematics_mutau.cfg")
+			syst.addSystFile("config/systematics_mutau.cfg")
 		elif(opt.channel == "ETau" ):
-			syst.addSystFile("../config/systematics_etau.cfg")
+			syst.addSystFile("config/systematics_etau.cfg")
 
-		if opt.theory: syst.addSystFile("../config/syst_th.cfg")
+		if opt.theory: syst.addSystFile("config/syst_th.cfg")
 		syst.writeSystematics()
 
 		for isy in range(len(syst.SystNames)):
@@ -185,12 +188,12 @@ def  writeCard(input,theLambda,select,kLambda,region=-1):
 			jesproc = MCbackgrounds
 			jesproc.append(lambdaName)
 			# IN THIS PART WE TAKE AWAY THE PROCESSES THAT DO NOT HAVE jes/tes SHAPE UNCERTAINTY HISTOS DEFINED -> right now is completely random as a thing because no bkg has jes for 2018 skims
-			jesproc.remove("singleT")
-			if "boost" in select:
-				jesproc.remove("doubleTVV")
-				if opt.channel== "TauTau": jesproc.remove("doubleTsingleV")
-			if "VBF" in select:
-				if opt.channel== "TauTau": jesproc.remove("tripleV")
+			# jesproc.remove("singleT")
+			# if "boost" in select:
+			# 	jesproc.remove("doubleTVV")
+			# 	if opt.channel== "TauTau": jesproc.remove("doubleTsingleV")
+			# if "VBF" in select:
+			# 	if opt.channel== "TauTau": jesproc.remove("tripleV")
 
 			#cmb1.cp().process(jesproc).AddSyst(cmb1, "CMS_scale_j_13TeV","shape",ch.SystMap('channel','bin_id')([opt.channel],[0],1.000))
 			#cmb1.cp().process(jesproc).AddSyst(cmb1, "CMS_scale_t_13TeV","shape",ch.SystMap('channel','bin_id')([opt.channel],[0],1.000))
@@ -308,7 +311,7 @@ ROOT.gSystem.Load("libHiggsAnalysisCombinedLimit.so")
 
 # PRINT A BIT OF INITIAL INFO TAKEN FROM THE CONFIG
 parseOptions()
-if(opt.config==""): configname = opt.outPath+"/mainCfg_"+opt.channel+"_Legacy2018_binOptimization.cfg"
+if(opt.config==""): configname = opt.outPath+"/mainCfg_"+opt.channel+"_Legacy{0}_binOptimization.cfg".format(opt.year)
 else: configname = opt.config
 print configname
 input = configReader(configname)

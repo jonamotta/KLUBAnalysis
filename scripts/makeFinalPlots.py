@@ -431,9 +431,7 @@ if __name__ == "__main__" :
 
 
 	######################### PUT USER CONFIGURATION HERE ####################
-	#cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2018_lambdaScan.cfg"
-	cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2018_binOptimization.cfg"
-	#cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2018.cfg"
+	cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2018.cfg"
 	cfg        = cfgr.ConfigReader (cfgName)
 	bkgList    = cfg.readListOption("general::backgrounds")
 
@@ -445,7 +443,8 @@ if __name__ == "__main__" :
 		bkgList.append('QCD')
 	sigList = cfg.readListOption("general::signals")
 
-	sigList = ['ggHH_bbtt11']
+	sigList = ['GGHHSM']
+	#sigList = ['ggHH_bbtt11']
 	#sigList = ["VBFC2V1","ggHH"]
 	#sigList = ["VBFRadion600","VBFRadion900","VBFRadion2000"]
 
@@ -519,8 +518,8 @@ if __name__ == "__main__" :
 	###########################################################################
 	#setPlotStyle()
 
-	#outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter.root')
-	outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter_{0}.root'.format(args.channel))
+	outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter.root')
+	#outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter_{0}.root'.format(args.channel))
 
 
 	#    if not "Tau" in args.channel:
@@ -547,36 +546,38 @@ if __name__ == "__main__" :
 
 	doOverflow = args.overflow
 
-	#hGGHHSM = getHisto("GGHHSM",hSigs,doOverflow)
-	hGGHHSM = getHisto("ggHH_bbtt11",hSigs,doOverflow)
+	hGGHHSM = getHisto("GGHHSM",hSigs,doOverflow)
+	#hGGHHSM = getHisto("ggHH_bbtt11",hSigs,doOverflow)
 	#sum the signal channels in a single histo
 	hSignal = hGGHHSM
 
 	hDY = getHisto("DY",hBkgs,doOverflow)
+	#hDY_lowMass = getHisto("DY_lowMass",hBkgs,doOverflow)
+	#hDY = hDY + hDY_lowMass
 	hTT = getHisto("TT",hBkgs,doOverflow)
 	#hothers = getHisto("other", hBkgs,doOverflow)
 
 	# the following accessing of the hitos is used when the histos are not merged all in 'other' but are merged in categories like doubleTVV, doubleTsingleV etc.
 	# if we use this we must comment the line above that sets hothers
-	hVVV = getHisto("tripleV",hBkgs,doOverflow)
 	hWJets = getHisto("WJets",hBkgs,doOverflow)
-	hVV = getHisto("doubleV", hBkgs,doOverflow)
-	hTTVV = getHisto("doubleTVV",hBkgs,doOverflow)
-	hTTV = getHisto("doubleTsingleV",hBkgs,doOverflow)
 	hEWK = getHisto("EWK", hBkgs,doOverflow)
+	hsingleT = getHisto("singleT", hBkgs,doOverflow)
+	hVH = getHisto("VH", hBkgs,doOverflow)
+	httH = getHisto("ttH", hBkgs,doOverflow)
+	hTTV = getHisto("doubleTsingleV",hBkgs,doOverflow)
+	hTTVV = getHisto("doubleTVV",hBkgs,doOverflow)
+	hVV = getHisto("doubleV", hBkgs,doOverflow)
+	hVVV = getHisto("tripleV",hBkgs,doOverflow)
 	hggH = getHisto("ggHTauTau", hBkgs,doOverflow)
 	hVBFH = getHisto("VBFHTauTau", hBkgs,doOverflow)
-	httH = getHisto("ttH", hBkgs,doOverflow)
-	hVH = getHisto("VH", hBkgs,doOverflow)
-	hsingleT = getHisto("singleT", hBkgs,doOverflow)
 
 	hsingleH = httH + hVH + hVBFH + hggH
 	hsingleH.SetName("singleH")
-	hothers = hVVV + hVV + hTTVV + hTTV  + hEWK + hsingleT + hsingleH + hWJets
+	hothers = hVVV + hVV + hTTVV + hTTV  + hEWK + hsingleT + hsingleH
 	hothers.SetName("Others")
 
 	# full list for stack
-	hBkgList = [hothers, hTT, hDY]
+	hBkgList = [hothers, hTT, hDY, hWJets]
 	# full list for yields
 	# we have to subtruct the singleH to others because in this part we separate singleH channels from others in order to calculate their specific yields
 	# we include singleH as well as its separated contibutions to avoid having to sum them afterwards as it would introduce a wrong propagation of the stat. error
@@ -584,7 +585,7 @@ if __name__ == "__main__" :
 	hBkgList_split = [hothers_split, hTT, hDY, hWJets, hVVV, hVV, hTTVV, hTTV, hEWK, hsingleT, httH, hVH, hggH, hVBFH, hsingleH]
 
 
-	hBkgNameList = ["Others", "t#bar{t}", "DY + jets"] # list for legend
+	hBkgNameList = ["Others", "t#bar{t}", "DY + jets", "W + jets"] # list for legend
 
 
 	#if cfg.hasSection('pp_QCD'):
@@ -675,17 +676,17 @@ if __name__ == "__main__" :
 		single_yields_txt.write("Data: "+str(hDatas[n].IntegralAndError(-1,-1,error))+" +/- "+str(error)+"\n")
 
 	#################### UNDERSTAND HUGE UNDERFLUCTUATION IN 13th BIN OF BDT SCORE IN boosted CATEGORY #######################
-	if "BDT" in args.var:
-		if "boosted" in args.sel:
-			if not "Mcut" in args.sel:
-				underfluctuation = open(args.dir+"/"+args.sel+"/underfluctuation.txt","w")
-				underfluctuation.write("YIELDS OF THE DIFFERENT PROCESSES INSIDE THE UNDERFLUCTUATING 13th BIN\n")
-				underfluctuation.write("----------------------------------------------------------------------\n\n")
-				underfluctuation.write("Signal: "+str(hSignal.GetBinContent(13))+" +/- "+str(hSignal.GetBinError(13))+"\n")
-				for h in hBkgList_split:
-					underfluctuation.write(h.GetName()+": "+str(h.GetBinContent(13))+" +/- "+str(h.GetBinError(13))+"\n")
-				for n in hDatas:
-					underfluctuation.write("Data: "+str(hDatas[n].GetBinContent(13))+" +/- "+str(hDatas[n].GetBinError(13))+"\n")
+	# if "BDT" in args.var:
+	# 	if "boosted" in args.sel:
+	# 		if not "Mcut" in args.sel:
+	# 			underfluctuation = open(args.dir+"/"+args.sel+"/underfluctuation.txt","w")
+	# 			underfluctuation.write("YIELDS OF THE DIFFERENT PROCESSES INSIDE THE UNDERFLUCTUATING 13th BIN\n")
+	# 			underfluctuation.write("----------------------------------------------------------------------\n\n")
+	# 			underfluctuation.write("Signal: "+str(hSignal.GetBinContent(13))+" +/- "+str(hSignal.GetBinError(13))+"\n")
+	# 			for h in hBkgList_split:
+	# 				underfluctuation.write(h.GetName()+": "+str(h.GetBinContent(13))+" +/- "+str(h.GetBinError(13))+"\n")
+	# 			for n in hDatas:
+	# 				underfluctuation.write("Data: "+str(hDatas[n].GetBinContent(13))+" +/- "+str(hDatas[n].GetBinError(13))+"\n")
 
 	#################### PERFORM DIVISION BY BIN WIDTH #######################
 	#clones non scaled (else problems with graph ratio because I pass data evt hist)

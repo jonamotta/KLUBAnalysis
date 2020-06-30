@@ -9,7 +9,8 @@
 #tag=30Apr2019_decaymodes_loosepu_mtt_DYenr_notauID
 #tag=4May2019_decaymodes_DYLO_loosepu_mtt_notauID
 #tag=22Jan2020_DMs_tauIDSF_inter
-tag=ThesisAnalysis/TauTau/plots_yields_Legacy2018/w_IDSF/IDSF
+#tag=ThesisAnalysis/TauTau/plots_yields_Legacy2018/w_IDSF/IDSF
+tag=tauIDSF_Legacy2017
 channel=TauTau
 ####TauTau channel
 ### same decay mode

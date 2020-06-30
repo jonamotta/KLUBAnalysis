@@ -1,5 +1,6 @@
 # Tag
-tag=tauIDSF_17Feb2020_Legacy2017
+tag=tauIDSF_Legacy2017
+channel=TauTau
 
 # Options to launch
 # --ch    : channels
@@ -10,7 +11,7 @@ tag=tauIDSF_17Feb2020_Legacy2017
 #           one single datacard_QCD.txt of the signal region; if False it creates 4 datacards A, B, C and D and combines them in combined.txt,
 #           in this way it can do the fit while changing simultaneously the QCD
 
-python makeCards_Legacy2017.py --tag $tag --ch TauTau --decay bothDM0 --sel baselineHTauTau_bothDM0_DY
-python makeCards_Legacy2017.py --tag $tag --ch TauTau --decay bothDM1 --sel baselineHTauTau_bothDM1_DY
-python makeCards_Legacy2017.py --tag $tag --ch TauTau --decay bothDM10 --sel baselineHTauTau_bothDM10_DY
-python makeCards_Legacy2017.py --tag $tag --ch TauTau --decay bothDM11 --sel baselineHTauTau_bothDM11_DY
+python combiner2018/tauIDSF/makeCards_Legacy2017.py --tag $tag --ch $channel --decay bothDM0 --sel baselineHTauTau_bothDM0_DY
+python combiner2018/tauIDSF/makeCards_Legacy2017.py --tag $tag --ch $channel --decay bothDM1 --sel baselineHTauTau_bothDM1_DY
+python combiner2018/tauIDSF/makeCards_Legacy2017.py --tag $tag --ch $channel --decay bothDM10 --sel baselineHTauTau_bothDM10_DY
+python combiner2018/tauIDSF/makeCards_Legacy2017.py --tag $tag --ch $channel --decay bothDM11 --sel baselineHTauTau_bothDM11_DY

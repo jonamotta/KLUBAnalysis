@@ -13,6 +13,7 @@ def parseOptions():
 	parser.add_option('-c', '--channel',   dest='channel',   type='string', default="TauTau",  help='channel')
 	parser.add_option('-a', '--analysis',   dest='analysis',   type='string', default="GGF",  help='channel')
 	parser.add_option('-d', '--dest',   dest='outPath',   type='string', default="",  help='output path')
+	parser.add_option('-y', '--year', dest='year', type='string', default='2018', help='output path')
 
 	# store options and arguments as global variables
 	global opt, args
@@ -32,16 +33,18 @@ toth = len (inFile.GetListOfKeys())
 histos_syst_up = []
 histos_syst_down = []
 
-# use the following for the PreOpt steps
-selnames = [ "s2b0j", "sboost"]
-# use the following for the PostOpt steps
-#selnames = ["s1b1j", "s2b0j", "sboost", "VBFloose"]
-# use the following for the complete limit extraction
-#selnames = ["s1b1j", "s2b0j", "sboost", "VBFloose", "VBFtight"]
+
+# here we choose the correct selections depending on the year and channel we are considering
+if opt.year != "2016" and opt.channel == "TauTau":
+    # TauTau (only 2017/2018) selections
+    selnames = ["s1b1j", "s2b0j", "sboost", "VBFloose", "VBFtight"]
+else:
+    # ETau/MuTau (all years) + TauTau (2016) selections
+    selnames = ["s1b1j", "s2b0j", "sboost", "VBFloose"]
 
 
 if opt.analysis == "GGF":
-	procnames = ["TT", "DY", "WJets", "EWK ", "singleT", "ttH", "VH", "ggHTauTau", "VBFHTauTau", "doubleTsingleV", "doubleTVV", "doubleV", "tripleV", "GGHHSM"]
+	procnames = ["TT", "DYtot", "others",  "GGHHSM"]
 elif opt.analysis == "VBF":
 	procnames = [ "TT", "DY", "WJets", "EWK ", "singleT", "ttH", "VH", "ggHTauTau", "VBFHTauTau", "doubleTsingleV", "doubleTVV", "doubleV", "tripleV","GGF_xs", "VBFHH_CV_"]
 

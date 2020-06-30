@@ -1,0 +1,76 @@
+- #L79-93 what are the numbers? Elliptical cut? Where do they come from? 
+
+- #L96-110 what is the stitch weighting? Legacy2016?
+
+- #L759 what does HHKonFit do?
+
+- #L764-770 what are HTMax and HTMin cutting on? (it has to do with the stitch)
+
+- #L810-814 we initialise the values of the couplings by hand -> going on we never modify this and we only check that the values are >=-990 
+		-> is it because we are skimming and every skim is produced for a specific combination of couplings? 
+
+- #L836-845 how does the reweighing technique work?
+
+- #L906 what is the difference between reweighs and triggerbit+matching?
+
+- #L979-980 what are this two? What file is it opening? Where are these files? (-> fct. definition #L134: what are the Trigger Counters?)
+
+- #L1038-1040 which one we have to use? 94X or 102X?
+
+- #L1062 in the 2018 there is a dummy file!!!
+
+- #L1153-1286 I need to see the files to understand -> we are taking indices of stuff and storing them in vectors
+
+- #L1290-1315 what are those
+
+
+
+
+- #L1456 how does the CheckBit fct work?? comparing flag with 2^12, wtf?!
+
+- #L1547-1549 standard way to calculate it??
+
+* - #L1573 cf. #L1443 why DY asks also for MC and ttbar not?
+
+* - #L1559 why TTtopPtreweight_down is not used?!
+
+- #L1591 why fix abs=2 ?? 'Make sure that events with n_bJets == 3 are included in the n_bJets == 2 case' but why?
+
+- #L1603-16011 what is this for loop doing?! what is the CheckBit fct doing? comparing flag with 2^13 or 2^0, wtf?!
+
+* - #L1767 particle 66615 does not exist?!
+
+- #L1893 what are the genHHDecMode? what is that strange calculation?
+
+- #L1899-1916 strange way of counting events -> this EvtW is then added every time we match a certain selection to the specific event counter (ec)
+
+- #L1926-1933 we do increment the variable for each bad thing that can happen and discard the event (#L1951-1952) if does not fulfil goodness criteria
+
+* - #L1989-1990 / #L1997-1998 are the values for the cuts correct?
+
+* - #L2449-2457 correct the values for 2018, what is the 2018 prescale? the ones written now are the 2017 ones
+
+* - #L3062-3079 are the SF values correct?
+
+- #L3219 why do we skip taus?
+
+* - #L3223-3224 are the selections ok?
+
+- #L3210-3281 third lepton veto is not vetoing?!
+
+* - #L3370 why do we sort by deepCSV if we are going to use deepFlavor? we could be loosing the best deepFlavor scoring jets -> #L3388-3395
+
+- #L3794-3850 what is this for?
+
+* - #L4410-4430 dummy values
+
+
+
+
+
+
+
+
+
+
+

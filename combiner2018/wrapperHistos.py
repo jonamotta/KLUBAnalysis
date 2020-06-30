@@ -12,6 +12,7 @@ def parseOptions():
 	parser.add_option('-o', '--outfile',   dest='outName',   type='string', default="w",  help='output suffix')
 	parser.add_option('-c', '--channel',   dest='channel',   type='string', default="TauTau",  help='channel')
 	parser.add_option('-a', '--analysis',   dest='analysis',   type='string', default="GGF",  help='channel')
+	parser.add_option('-d', '--dest',   dest='outPath',   type='string', default="",  help='output path')
 
 	# store options and arguments as global variables
 	global opt, args
@@ -34,7 +35,7 @@ histos_syst_down = []
 selnames = ["s1b1j", "s2b0j", "sboost", "VBFloose", "VBFtight"]
 
 if opt.analysis == "GGF":
-	procnames = ["TT", "DY", "WJets", "EWK ", "singleT", "ttH", "VH", "ggHTauTau", "VBFHTauTau", "doubleTsingleV", "doubleTVV", "doubleV", "tripleV", "GGFSM"]
+	procnames = ["TT", "DY", "DY_lowMass", "WJets", "EWK ", "singleT", "ttH", "VH", "ggHTauTau", "VBFHTauTau", "doubleTsingleV", "doubleTVV", "doubleV", "tripleV", "GGHHSM"]
 elif opt.analysis == "VBF":
 	procnames = [ "TT", "DY", "WJets", "EWK ", "singleT", "ttH", "VH", "ggHTauTau", "VBFHTauTau", "doubleTsingleV", "doubleTVV", "doubleV", "tripleV","GGF_xs", "VBFHH_CV_"]
 
@@ -103,7 +104,7 @@ for key in inFile.GetListOfKeys() :
 	if "bidim" in newName :
 		newName = kname.replace("bidimrew","ggHH_bbtt")
 	else:
-		newName = kname.replace("GGFSM","ggHH_bbtt11")  # ggHH_bbtt11 == SM production of HH
+		newName = kname.replace("GGHHSM","ggHH_bbtt11")  # ggHH_bbtt11 == SM production of HH
 
 	if "VBFHH" in newName:
 		newName = kname.replace("VBFHH","VBFHH_bbtt")
@@ -176,7 +177,7 @@ for key in inFile.GetListOfKeys() :
 		#if "QCD" in kname :
 		listHistos.append(template.Clone())
 
-outFile = TFile.Open(opt.outName+"/analyzedOutPlotter_{0}.root".format(opt.outName),"RECREATE")
+outFile = TFile.Open(opt.outPath+"/analyzedOutPlotter_{0}.root".format(opt.outName),"RECREATE")
 outFile.cd()
 for h in listHistos :
 	h.Write()

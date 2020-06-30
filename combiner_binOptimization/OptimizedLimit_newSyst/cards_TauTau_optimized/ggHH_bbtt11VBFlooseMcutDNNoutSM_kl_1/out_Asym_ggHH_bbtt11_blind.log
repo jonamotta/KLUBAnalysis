@@ -1,0 +1,13 @@
+ <<< Combine >>> 
+Will use a-priori expected background instead of a-posteriori one.
+>>> method used is AsymptoticLimits
+>>> random number generator seed is 123456
+
+ -- AsymptoticLimits ( CLs ) --
+Expected  2.5%: r < 0.0299
+Expected 16.0%: r < 0.0441
+Expected 50.0%: r < 0.0703
+Expected 84.0%: r < 0.1157
+Expected 97.5%: r < 0.1839
+
+Done in 0.04 min (cpu), 0.04 min (real)

@@ -1,0 +1,15 @@
+imax 1
+jmax 3
+kmax *
+------------
+shapes * * FAKE
+------------
+bin s1b1jresolvedMcut 
+observation 6530.0 
+------------
+bin s1b1jresolvedMcut s1b1jresolvedMcut s1b1jresolvedMcut s1b1jresolvedMcut 
+process TT DYtot others QCD 
+process 1 2 3 4 
+rate 3826.4076 248.6460 1325.2064 1129.7400 
+------------
+QCD_regD rateParam  s1b1jresolvedMcut QCD 1 

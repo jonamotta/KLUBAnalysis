@@ -19,7 +19,7 @@ def parseOptions():
 	parser = optparse.OptionParser(usage)
 
 	parser.add_option('-f', '--filename',   dest='filename',   type='string', default="",  help='input plots')
-	parser.add_option('-o', '--dir', dest='outDir', type='string', default='', help='outdput dir')
+	parser.add_option('-o', '--dir', dest='outDir', type='string', default='', help='outdput dir tag')
 	parser.add_option('-c', '--channel',   dest='channel', type='string', default='TauTau',  help='final state')
 	parser.add_option('-i', '--config',   dest='config', type='string', default='',  help='config file')
 	parser.add_option('-s', '--selection', dest='overSel', type='string', default='', help='overwrite selection string')
@@ -28,6 +28,7 @@ def parseOptions():
 	parser.add_option('-y', '--binbybin',  action="store_true", dest='binbybin', help='add bin by bins systematics')
 	parser.add_option('-t', '--theory',  action="store_true", dest='theory', help='add theory systematics')
 	parser.add_option('-u', '--shape', dest='shapeUnc', type='int', default=1, help='1:add 0:disable shape uncertainties')
+	parser.add_option('-p', '--path', dest='outPath', type='string', default='', help='path of output folder')
 
 	# store options and arguments as global variables
 	global opt, args
@@ -74,12 +75,13 @@ def  writeCard(input,theLambda,select,kLambda,region=-1):
 	if opt.isResonant:
 		variables.append('HHKin_mass_raw')
 	else:
-		variables.append('BDToutSM_kl_'+kLambda) # kLambda refers to the actual value of the kLambda under consideration in this iteration (SM == 1)
+		#variables.append('BDToutSM_kl_'+kLambda) # kLambda refers to the actual value of the kLambda under consideration in this iteration (SM == 1)
+		variables.append('DNNoutSM_kl_'+kLambda) # kLambda refers to the actual value of the kLambda under consideration in this iteration (SM == 1)
 
 	#out_dir = opt.outDir
 	theOutputDir = "{0}{1}{2}".format(theLambda,select,variables[0]) # theLambda refers to the 'index' of th kLambda value inside the kLambdas array (its just a position number, SM == 11)
 	dname = "_"+opt.channel+opt.outDir
-	out_dir = "cards{1}/{0}/".format(theOutputDir,dname)
+	out_dir = opt.outPath+"/cards{1}/{0}/".format(theOutputDir,dname)
 	print "out_dir = ", out_dir
 	cmb1 = ch.CombineHarvester()
 	cmb1.SetFlag('workspaces-use-clone', True)
@@ -307,7 +309,7 @@ ROOT.gSystem.Load("libHiggsAnalysisCombinedLimit.so")
 
 # PRINT A BIT OF INITIAL INFO TAKEN FROM THE CONFIG
 parseOptions()
-if(opt.config==""): configname = "../config/analysis_"+opt.channel+"_Legacy2018.cfg"
+if(opt.config==""): configname = opt.outPath+"/mainCfg_"+opt.channel+"_Legacy2018.cfg"
 else: configname = opt.config
 print configname
 input = configReader(configname)
@@ -322,7 +324,7 @@ if not opt.overLambda == "":
 	input.signals = [opt.overLambda]
 print input.signals
 for il in range(len(input.signals)):
-	input.signals[il] = input.signals[il].replace("GGFSM","ggHH_bbtt11")
+	input.signals[il] = input.signals[il].replace("GGHHSM","ggHH_bbtt11")
 	input.signals[il] = input.signals[il].replace("bidimrew","ggHH_bbtt")
 
 # VALUES OF kLambda ON WHICH THE PROGRAM WILL LOOP WHEN WE NEED TO DO THE kLambda SCAN -> MUST BE THE SAME AS IN makeCategories.sh

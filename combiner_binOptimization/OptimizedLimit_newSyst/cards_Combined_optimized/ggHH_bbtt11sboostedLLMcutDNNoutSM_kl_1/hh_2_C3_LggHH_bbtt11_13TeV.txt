@@ -1,0 +1,52 @@
+# Datacard produced by CombineHarvester with git status: analysis-HIG-16-006-freeze-080416-806-g6af279a-dirty
+imax    1 number of bins
+jmax    3 number of processes minus 1
+kmax    * number of nuisance parameters
+--------------------------------------------------------------------------------
+shapes * sboostedLLMcut hh_2_C3_LggHH_bbtt11_13TeV.input.root sboostedLLMcut/$PROCESS sboostedLLMcut/$PROCESS_$SYSTEMATIC
+shapes ggHH_bbtt sboostedLLMcut hh_2_C3_LggHH_bbtt11_13TeV.input.root sboostedLLMcut/ggHH_bbtt$MASS sboostedLLMcut/ggHH_bbtt$MASS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          sboostedLLMcut  
+observation  15.0            
+--------------------------------------------------------------------------------
+bin                                                                   sboostedLLMcut  sboostedLLMcut  sboostedLLMcut  sboostedLLMcut  
+process                                                               TT              DYtot           others          ggHH_bbtt       
+process                                                               1               2               3               0               
+rate                                                                  7.78874         4.28675         3.74519         92.9968         
+--------------------------------------------------------------------------------
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_DYtot_bin_18     shape   -               1               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_1         shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_10        shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_18        shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_2         shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_3         shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_4         shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_TT_bin_6         shape   1               -               -               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_10 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_11 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_12 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_13 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_14 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_15 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_16 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_ggHH_bbtt_bin_17 shape   -               -               -               1               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_others_bin_5     shape   -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_others_bin_7     shape   -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_others_bin_8     shape   -               -               1               -               
+CMS_DNNoutSM_kl_1_MuTau_sboostedLLMcut_13TeV_others_bin_9     shape   -               -               1               -               
+CMS_DY_SFUnc                                                  lnN     -               1.1             -               -               
+CMS_eff_btag                                                  lnN     1.03            1.04            1.03            1.02            
+CMS_eff_m                                                     lnN     1.018           1.018           1.018           1.018           
+CMS_eff_t                                                     lnN     1.07            1.07            1.07            1.07            
+CMS_scale_b                                                   lnN     1.02            1.02            1.02            1.02            
+HH_BR_Hbb                                                     lnN     -               -               -               1.012/0.987     
+HH_BR_Htt                                                     lnN     -               -               -               1.016           
+QCDscale_tt                                                   lnN     1.048/0.939     -               -               -               
+Rscale_ggHH                                                   lnN     -               -               -               1.022/0.95      
+alphaS_ggHH                                                   lnN     -               -               -               1.021           
+lumi_13TeV                                                    lnN     1.025           1.025           1.025           1.025           
+mtop_ggHH                                                     lnN     -               -               -               1.026           
+pdf_ggHH                                                      lnN     -               -               -               1.021           
+top                                                           shape   1               -               -               -               
+theory group = HH_BR_Hbb HH_BR_Htt pdf_ggHH
+* autoMCStats 0 
