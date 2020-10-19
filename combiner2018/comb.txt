@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/cms/cmssw/CMSSW_10_2_16/external/slc6_amd64_gcc700/bin/../../../../../../../slc6_amd64_gcc700/external/python/2.7.14-omkpbe4/lib/python2.7/site.py", line 539, in <module>
+    main()
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/cms/cmssw/CMSSW_10_2_16/external/slc6_amd64_gcc700/bin/../../../../../../../slc6_amd64_gcc700/external/python/2.7.14-omkpbe4/lib/python2.7/site.py", line 530, in main
+    execsitecustomize()
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/cms/cmssw/CMSSW_10_2_16/external/slc6_amd64_gcc700/bin/../../../../../../../slc6_amd64_gcc700/external/python/2.7.14-omkpbe4/lib/python2.7/site.py", line 489, in execsitecustomize
+    import sitecustomize
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/python/2.7.14-omkpbe4/lib/python2.7/sitecustomize.py", line 5, in <module>
+    site.addsitedir(p)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/cms/cmssw/CMSSW_10_2_16/external/slc6_amd64_gcc700/bin/../../../../../../../slc6_amd64_gcc700/external/python/2.7.14-omkpbe4/lib/python2.7/site.py", line 184, in addsitedir
+    names = os.listdir(sitedir)
+KeyboardInterrupt

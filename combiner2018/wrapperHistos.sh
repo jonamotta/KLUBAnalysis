@@ -24,6 +24,6 @@
 #python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/test_benchmark/MuTau/analyzedOutPlotter.root -c MuTau -o MuTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/test_benchmark/ -a "GGF"
 #python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/test_benchmark/TauTau/analyzedOutPlotter.root -c TauTau -o TauTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/test_benchmark/ -a "GGF"
 
-python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/ETau/analyzedOutPlotter.root -c ETau -o ETau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/ -a "GGF"
-python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/MuTau/analyzedOutPlotter.root -c MuTau -o MuTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/ -a "GGF"
-python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/TauTau/analyzedOutPlotter.root -c TauTau -o TauTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/20bin_benchmark/ -a "GGF"
+python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/ETau/analyzedOutPlotter.root -c ETau -o ETau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/ -a "GGF"
+python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/MuTau/analyzedOutPlotter.root -c MuTau -o MuTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/ -a "GGF"
+python combiner2018/wrapperHistos.py -f /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/TauTau/analyzedOutPlotter.root -c TauTau -o TauTau -d /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/10bin_benchmark/ -a "GGF"

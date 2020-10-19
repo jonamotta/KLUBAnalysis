@@ -1,0 +1,2023 @@
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/2b0j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.151502919895
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/2b0j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/2b0j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.151954896904
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/2b0j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/2b0j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.155287807501
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/2b0j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/boosted/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0982781265448
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/boosted/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/boosted/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0693445614521
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/boosted/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/boosted/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.102229994116
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/boosted/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/boosted/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.102229994116
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/boosted/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/1b1j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277502796
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/1b1j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/1b1j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132334679719
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/1b1j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/1b1j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277498909
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/1b1j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/1b1j/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277499399
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/1b1j/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/VBFloose/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142108047744
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/VBFloose/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/VBFloose/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273462343
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/VBFloose/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+** VARIABLE: DNNoutSM_kl_1 **
+** CHANNEL: TauTau **
+** YEAR: 2018 **
+
+** INFO: removed neg bins from histo  GGHHSM
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  DYtot
+** INFO: removed neg bins from histo  others
+** INFO: removed neg bins from histo  GGHHSM
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  DYtot
+** INFO: removed neg bins from histo  others
+** INFO: removed neg bins from histo  GGHHSM
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  DYtot
+** INFO: removed neg bins from histo  others
+** INFO: removed neg bins from histo  GGHHSM
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  DYtot
+** INFO: removed neg bins from histo  others
+** INFO: removed neg bins from histo  GGHHSM
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  DYtot
+** INFO: removed neg bins from histo  others
+
+** 278.737121582 @ bin 1 **
+** 54.2527275085 @ bin 2 **
+** THE ConstSize s2b0jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** THE FlatS s2b0jresolvedMcut 10bins CONFIGURATION IS TOO SCATTERED **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 41.9022674561 @ bin 1 **
+** 42.1798400879 @ bin 2 **
+** THE FlatB s2b0jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 41.9199829102 @ bin 1 **
+** 42.4455223083 @ bin 2 **
+** THE FlatSB s2b0jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  TT
+
+** 8.18605899811 @ bin 1 **
+** 2.30672764778 @ bin 2 **
+** THE ConstSize sboostedLLMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  TT
+
+** 11.8900947571 @ bin 1 **
+** 1.11941409111 @ bin 2 **
+** THE FlatS sboostedLLMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  TT
+
+** 1.43486785889 @ bin 1 **
+** 1.67393052578 @ bin 2 **
+** THE FlatB sboostedLLMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+** INFO: removed neg bins from histo  TT
+** INFO: removed neg bins from histo  TT
+
+** 1.44936800003 @ bin 1 **
+** 1.65960097313 @ bin 2 **
+** THE FlatSB sboostedLLMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 1140.8807373 @ bin 1 **
+** 310.438323975 @ bin 2 **
+** THE ConstSize s1b1jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 1630.21838379 @ bin 1 **
+** 183.292510986 @ bin 2 **
+** THE FlatS s1b1jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 211.723083496 @ bin 1 **
+** 208.082290649 @ bin 2 **
+** THE FlatB s1b1jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 211.855361938 @ bin 1 **
+** 208.099700928 @ bin 2 **
+** THE FlatSB s1b1jresolvedMcut 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 333.193267822 @ bin 1 **
+** 27.6883144379 @ bin 2 **
+** THE ConstSize VBFloose 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** THE FlatS VBFloose 10bins CONFIGURATION IS TOO SCATTERED **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 73.1271972656 @ bin 1 **
+** 44.0064086914 @ bin 2 **
+** THE FlatB VBFloosNO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/VBFloose/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273461581
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.119947964123
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/VBFloose/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/VBFtight/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.121428343272
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/ConstSize/VBFtight/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/VBFtight/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.121168818948
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatS/VBFtight/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/VBFtight/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.124871393812
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatB/VBFtight/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/VBFtight/bins_10//outPlotter.root
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s1b1jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFloose_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: VBFtight_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: s2b0jresolvedMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SR
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SStight
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSrlx
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_OSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... rebinning histos for var: DNNoutSM_kl_1 sel: sboostedLLMcut_SSinviso
+.. this is a TT sample, hence the only one with systs ['topUp', 'topDown']
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.132277487911
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.144329673746
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0422903788412
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.142273454067
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.124871393812
+NO OPT variables2D in CONFIG at general
+... opening  NumbAndDistribScanSteps_TauTau2018DNNoutSM_kl_1/FlatSB/VBFtight/bins_10/NONweighted/outPlotter.root
+... building QCD w/ name: QCD . SR: SR  yieldSB: OSinviso  shapeSB: OSinviso  SBtoSRfactor: 1.0
+    >> recompute SBtoSR dynamically? 
+    >>  yes
+    >> doFitIf: False fitFunction: [0] + [1]*x 
+
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s1b1jresolvedMcut
+data_obs_s1b1jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s1b1jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13837863045
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  s2b0jresolvedMcut
+data_obs_s2b0jresolvedMcut_SStight_DNNoutSM_kl_1
+data_obs_s2b0jresolvedMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.159342565421
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  sboostedLLMcut
+data_obs_sboostedLLMcut_SStight_DNNoutSM_kl_1
+data_obs_sboostedLLMcut_SSinviso_DNNoutSM_kl_1
+... C/D =  0.0869694745021
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFloose
+data_obs_VBFloose_SStight_DNNoutSM_kl_1
+data_obs_VBFloose_SSinviso_DNNoutSM_kl_1
+... C/D =  0.17789363231
+... computing C/D factor for QCD from: C = SStight , D = SSinviso in region  VBFtight
+data_obs_VBFtight_SStight_DNNoutSM_kl_1
+data_obs_VBFtight_SSinviso_DNNoutSM_kl_1
+... C/D =  0.13229237535
+e 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 73.1271972656 @ bin 1 **
+** 44.0064086914 @ bin 2 **
+** THE FlatSB VBFloose 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 86.5804138184 @ bin 1 **
+** 6.7780880928 @ bin 2 **
+** THE ConstSize VBFtight 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 76.9040603638 @ bin 1 **
+** 14.3492631912 @ bin 2 **
+** THE FlatS VBFtight 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 11.833067894 @ bin 1 **
+** 11.8234910965 @ bin 2 **
+** THE FlatB VBFtight 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+** 11.833067894 @ bin 1 **
+** 11.8234910965 @ bin 2 **
+** THE FlatSB VBFtight 10bin CONFIGURATION CAN CAUSE BIAS IN THE LIMIT EXTRACTION **
+** IGNORING IT AND SKIPPING TO THE NEXT CONFIGURATION **
+
+
+
+Number of Bins and Distribution Scan running time = 0h 10m 12s

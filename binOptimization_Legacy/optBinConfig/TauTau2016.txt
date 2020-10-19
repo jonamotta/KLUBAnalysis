@@ -1,0 +1,4 @@
+s2b0jresolvedMcut	ConstSize	48
+s1b1jresolvedMcut	ConstSize	38
+sboostedLLMcut		ConstSize	8
+VBFloose		FlatS		7

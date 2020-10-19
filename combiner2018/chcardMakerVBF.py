@@ -17,7 +17,7 @@ def parseOptions():
     usage = ('usage: %prog [options] datasetList\n'
              + '%prog -h for help')
     parser = optparse.OptionParser(usage)
-    
+
     parser.add_option('-f', '--filename',   dest='filename',   type='string', default="",  help='input plots')
     parser.add_option('-o', '--dir', dest='outDir', type='string', default='', help='outdput dir')
     parser.add_option('-c', '--channel',   dest='channel', type='string', default='TauTau',  help='final state')
@@ -90,7 +90,7 @@ def  writeCard(input,theLambda,select,region=-1) :
 	print cmd
 	regionName = ["","regB","regC","regD"]
 	regionSuffix = ["SR","SStight","OSinviso","SSinviso"]
-	status, output = commands.getstatusoutput(cmd)   
+	status, output = commands.getstatusoutput(cmd)
 	#outFile = opt.outDir+"/chCard{0}{2}_{1}_{3}.txt".format(theLambda,opt.channel,regionName[region+1],select)
 	thechannel = "1"
 	if opt.channel == "MuTau" : thechannel="2"
@@ -151,10 +151,10 @@ def  writeCard(input,theLambda,select,region=-1) :
 	if allQCDs[0]>0 and allQCDs[1]>0 and allQCDs[2]>0 and allQCDs[3]>0 : allQCD = True
 	for i in range(4) : print allQCDs[i]
 	#add processes to CH
-	#masses->125 
+	#masses->125
 	#analyses->Res/non-Res(HHKin_fit,MT2)
-	#eras->13TeV 
-	#channels->mutau/tautau/etau 
+	#eras->13TeV
+	#channels->mutau/tautau/etau
 	#bin->bjet categories
 	#print signals, signals[0]
         print theLambda
@@ -168,13 +168,13 @@ def  writeCard(input,theLambda,select,region=-1) :
 		syst = systReader("../config/systematics.cfg",[lambdaName],backgrounds,file)
 		syst.writeOutput(False)
 		syst.verbose(True)
-		if(opt.channel == "TauTau" ): 
+		if(opt.channel == "TauTau" ):
 			syst.addSystFile("../config/systematics_tautau.cfg")
                         if ("tight" in select):
                             syst.addSystFile("../config/systematics_VBFtight.cfg")
-		elif(opt.channel == "MuTau" ): 
+		elif(opt.channel == "MuTau" ):
 			syst.addSystFile("../config/systematics_mutau.cfg")
-		elif(opt.channel == "ETau" ): 
+		elif(opt.channel == "ETau" ):
 			syst.addSystFile("../config/systematics_etau.cfg")
 		if opt.theory : syst.addSystFile("../config/syst_th.cfg")
 		syst.writeSystematics()
@@ -190,7 +190,7 @@ def  writeCard(input,theLambda,select,region=-1) :
 				else :
 					systVal = float(syst.SystValues[isy][iproc])
 				#print isy, iproc, systVal
-                                
+
 				print "adding Syst",systVal,syst.SystNames[isy],syst.SystTypes[isy],"to",syst.SystProcesses[isy][iproc]
 				cmb1.cp().process([syst.SystProcesses[isy][iproc]]).AddSyst(cmb1, syst.SystNames[isy],syst.SystTypes[isy],ch.SystMap('channel','bin_id')([opt.channel],[0],systVal))
 		if opt.shapeUnc > 0:
@@ -205,7 +205,7 @@ def  writeCard(input,theLambda,select,region=-1) :
                             jesproc.remove("DY2b")
                             jesproc.remove("WZ")
                             if opt.channel== "TauTau": jesproc.remove("WJets")
-                            
+
                         if "VBF" in select:
                             if opt.channel== "TauTau": jesproc.remove("WZ")
                         cmb1.cp().process(jesproc).AddSyst(cmb1, "CMS_scale_j_13TeV","shape",ch.SystMap('channel','bin_id')([opt.channel],[0],1.000))
@@ -220,17 +220,17 @@ def  writeCard(input,theLambda,select,region=-1) :
 		cmb1.cp().backgrounds().ExtractShapes(
 			opt.filename,
 			"$PROCESS_$BIN_{1}_{0}".format(variables[0],regionSuffix[region+1]),
-                        "$PROCESS_$BIN_{1}_{0}_$SYSTEMATIC".format(variables[0],regionSuffix[region+1])) 
+                        "$PROCESS_$BIN_{1}_{0}_$SYSTEMATIC".format(variables[0],regionSuffix[region+1]))
 		cmb1.cp().signals().ExtractShapes(
 			opt.filename,
 			"$PROCESS$MASS_$BIN_{1}_{0}".format(variables[0],regionSuffix[region+1]),
-			"$PROCESS$MASS_$BIN_{1}_{0}_$SYSTEMATIC".format(variables[0],regionSuffix[region+1])) 
+			"$PROCESS$MASS_$BIN_{1}_{0}_$SYSTEMATIC".format(variables[0],regionSuffix[region+1]))
 
 		bbb = ch.BinByBinFactory()
 		bbb.SetAddThreshold(0.1).SetMergeThreshold(0.5).SetFixNorm(True)
 		bbbQCD = ch.BinByBinFactory()
 		bbbQCD.SetAddThreshold(0.0).SetMergeThreshold(0.5).SetFixNorm(True)
-		if opt.binbybin : 
+		if opt.binbybin :
 			bbb.MergeBinErrors(cmb1.cp().process(MCbackgrounds))
 			bbbQCD.MergeBinErrors(cmb1.cp().process(["QCD"]))
 			bbbQCD.AddBinByBin(cmb1.cp().process(["QCD"]), cmb1)
@@ -239,11 +239,11 @@ def  writeCard(input,theLambda,select,region=-1) :
 		outroot = TFile.Open(out_dir+"hh_{0}_C{1}_L{2}_13TeV.input.root".format(thechannel,theCat,theLambda),"RECREATE")
 
                 cmb1.SetGroup("theory", ["QCDscale_VBFHH","pdf_VBFHH","HH_BR_Hbb","HH_BR_Htt"])
-                
+
                 cmb1.WriteDatacard(out_dir+outFile,outroot)
 
 		if allQCD :
-			file = open( out_dir+outFile, "a")	
+			file = open( out_dir+outFile, "a")
 			file.write("alpha rateParam {0} QCD (@0*@1/@2) QCD_regB,QCD_regC,QCD_regD".format(select))
 	elif allQCD :
 		print thechannel,theCat,theLambda #,regionName2[region+1]
@@ -262,17 +262,17 @@ def  writeCard(input,theLambda,select,region=-1) :
 		file.write("------------\n")
 
 		templateName = "data_obs_{1}_{3}_{2}".format(bkg,select,variables[0],regionSuffix[region+1])
-		template = inRoot.Get(templateName)        
+		template = inRoot.Get(templateName)
 		file.write("bin {0} \n".format(select))
 		obs = template.GetEntries()
 		file.write("observation {0} \n".format(obs))
 
 		file.write("------------\n")
 
-		file.write("bin ")        
+		file.write("bin ")
 		for chan in backgrounds:
 			file.write("{0} ".format(select))
-		file.write("\n")      
+		file.write("\n")
 
 		file.write("process ")
 		for chan in backgrounds:
@@ -343,9 +343,9 @@ for c2V in range(len(C2V)) :
 #print input.signals
 
 for theLambda in input.signals:
-	if not lambdaName in theLambda : 
+	if not lambdaName in theLambda :
 		continue
-        for sel in allSel : 
+        for sel in allSel :
 
 
 		#if not "lambda" in theLambda and not "Radion" in theLambda : continue

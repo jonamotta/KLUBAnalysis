@@ -1,0 +1,4 @@
+s2b0jresolvedMcut	ConstSize	10
+s1b1jresolvedMcut	ConstSize	10
+sboostedLLMcut		ConstSize	10
+VBFloose		ConstSize	10

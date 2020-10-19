@@ -431,7 +431,7 @@ if __name__ == "__main__" :
 
 
 	######################### PUT USER CONFIGURATION HERE ####################
-	cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2018.cfg"
+	cfgName  =  args.dir + "/mainCfg_"+args.channel+"_Legacy2016.cfg"
 	cfg        = cfgr.ConfigReader (cfgName)
 	bkgList    = cfg.readListOption("general::backgrounds")
 

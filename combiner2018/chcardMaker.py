@@ -29,6 +29,7 @@ def parseOptions():
 	parser.add_option('-t', '--theory',  action="store_true", dest='theory', help='add theory systematics')
 	parser.add_option('-u', '--shape', dest='shapeUnc', type='int', default=1, help='1:add 0:disable shape uncertainties')
 	parser.add_option('-p', '--path', dest='outPath', type='string', default='', help='path of output folder')
+	parser.add_option('--year', dest='year', type='string', default='2018', help='year of teh data set')
 
 	# store options and arguments as global variables
 	global opt, args
@@ -155,19 +156,19 @@ def  writeCard(input,theLambda,select,kLambda,region=-1):
 
 	if region < 0:
 		#Systematics (I need to add by hand the shape ones)
-		syst = systReader("../config/systematics.cfg",[lambdaName],backgrounds,file)
+		syst = systReader("config/systematics.cfg",[lambdaName],backgrounds,file)
 		syst.writeOutput(False)
 		syst.verbose(True)
 		if(opt.channel == "TauTau" ):
-			syst.addSystFile("../config/systematics_tautau.cfg")
+			syst.addSystFile("config/systematics_tautau.cfg")
 			if("tight" in select):
-				syst.addSystFile("../config/systematics_VBFtight.cfg")
+				syst.addSystFile("config/systematics_VBFtight.cfg")
 		elif(opt.channel == "MuTau" ):
-			syst.addSystFile("../config/systematics_mutau.cfg")
+			syst.addSystFile("config/systematics_mutau.cfg")
 		elif(opt.channel == "ETau" ):
-			syst.addSystFile("../config/systematics_etau.cfg")
+			syst.addSystFile("config/systematics_etau.cfg")
 
-		if opt.theory: syst.addSystFile("../config/syst_th.cfg")
+		if opt.theory: syst.addSystFile("config/syst_th.cfg")
 		syst.writeSystematics()
 
 		for isy in range(len(syst.SystNames)):
@@ -309,7 +310,7 @@ ROOT.gSystem.Load("libHiggsAnalysisCombinedLimit.so")
 
 # PRINT A BIT OF INITIAL INFO TAKEN FROM THE CONFIG
 parseOptions()
-if(opt.config==""): configname = opt.outPath+"/mainCfg_"+opt.channel+"_Legacy2018.cfg"
+if(opt.config==""): configname = opt.outPath+"/mainCfg_"+opt.channel+"_Legacy{0}.cfg".format(opt.year)
 else: configname = opt.config
 print configname
 input = configReader(configname)

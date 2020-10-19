@@ -72,6 +72,23 @@ class OutputManager:
         #             for var in self.variables:
         #                 pass
 
+    def readSR (self, rootfile):
+        # read only SR histograms from rootfile
+        for key in rootfile.GetListOfKeys():
+            kname = key.GetName()
+            for sel in self.sel_def:
+                if "SR" in kname and sel in kname:
+                    obj = rootfile.Get(kname)
+
+                    ## 1D plots
+                    if isinstance(obj, ROOT.TH1):
+                        self.histos[kname] = obj
+
+                    ## 2D plots
+                    if isinstance(obj, ROOT.TH2):
+                        self.histos2D[kname] = obj
+
+
     def groupTogether (self, newName, partsList):
         """ regroup the samples in partsList into a new sample that replaces old ones"""
         

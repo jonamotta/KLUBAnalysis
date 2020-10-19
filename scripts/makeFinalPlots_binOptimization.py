@@ -445,22 +445,29 @@ if __name__ == "__main__" :
 		bkgList.append('QCD')
 	sigList = cfg.readListOption("general::signals")
 
-	sigList = ['GGHHSM']
+	sigNameList = []
+	if "VBF" in args.sel:
+		sigList = ['VBFHHSM']
+		sigNameList = ["VBF HH SM (#times{0})".format(int(args.sigscale))]
+	else:
+		sigList = ['GGHHSM']
+		sigNameList = ["ggF HH SM (#times{0})".format(int(args.sigscale))]
+
 	#sigList = ['ggHH_bbtt11']
 	#sigList = ["VBFC2V1","ggHH"]
 	#sigList = ["VBFRadion600","VBFRadion900","VBFRadion2000"]
 
-	sigNameList = []
-	if args.log:
+	#sigNameList = []
+	#if args.log:
 			#sigNameList = ["VBFC2V1","ggHH"]
 			#sigNameList = ["VBFRadion600","VBFRadion900","VBFRadion2000"]
-			#sigNameList = ["VBF HH SM (x10)"]
-			sigNameList = ["gg HH SM (x"+str(int(args.sigscale))+"pb)"]
-	else:
+			#sigNameList = ["VBF HH SM (#sigma#times#it{B})"]
+			#sigNameList = ["ggF HH SM", "VBF HH SM"]
+	#else:
 		   #sigNameList = ["VBFC2V1","ggHH (#times 0.1)"]
 		   #sigNameList = ["VBFRadion600","VBFRadion900","VBFRadion2000"]
-		   #sigNameList = ["VBF HH SM (x10)"]
-		   sigNameList = ["gg HH SM (x"+str(int(args.sigscale))+"pb)"]
+		   #sigNameList = ["VBF HH SM (#sigma#times#it{B})"]
+		   #sigNameList = ["ggF HH SM", "VBF HH SM"]
 
 	sigColors = {}
 	#sigColors["VBFC2V1"] = 2
@@ -468,7 +475,8 @@ if __name__ == "__main__" :
 	#sigColors["VBFRadion600"]  = kBlack
 	#sigColors["VBFRadion900"]  = kBlue
 	#sigColors["VBFRadion2000"] = kCyan
-	sigColors["VBFSM"] = kBlack
+	sigColors["VBFHHSM"] = kBlue
+	sigColors["GGHHSM"] = kBlue
 
 	bkgColors = {}
 	#bkgColors["singleT"] = kOrange+10
@@ -487,12 +495,15 @@ if __name__ == "__main__" :
 	bkgColors["WJets"] = col.GetColor("#41B4DB") #(TColor(65 ,180,219)).GetNumber() #gROOT.GetColor("#41B4DB")
 	bkgColors["others"] = col.GetColor("#ED635E") #(TColor(237,99 ,94 )).GetNumber() #gROOT.GetColor("#ED635E")
 	bkgColors["GGHHSM"] = col.GetColor(kBlue)
+	bkgColors["VBFHHSM"] = col.GetColor(kBlue)
 
 	bkgLineColors = {}
 	bkgLineColors["DY"]    = col.GetColor("#389956")
 	bkgLineColors["TT"]    = col.GetColor("#dea63c")
 	bkgLineColors["WJets"] = col.GetColor("#3ca4c8")
 	bkgLineColors["others"] = col.GetColor("#d85a56")
+	bkgColors["GGHHSM"] = col.GetColor(kBlue)
+	bkgColors["VBFHHSM"] = col.GetColor(kBlue)
 
 
 	#if args.sigscale:
@@ -520,7 +531,7 @@ if __name__ == "__main__" :
 	###########################################################################
 	#setPlotStyle()
 
-	outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter.root')
+	outplotterName = findInFolder  (args.dir+"/", 'prunedAnalyzedOutPlotter.root')
 	#outplotterName = findInFolder  (args.dir+"/", 'analyzedOutPlotter_{0}.root'.format(args.channel))
 
 
@@ -538,20 +549,17 @@ if __name__ == "__main__" :
 	hBkgs = retrieveHistos  (rootFile, bkgList, args.var, args.sel,args.reg,args.flat,binning)
 
 	hDatas = retrieveHistos  (rootFile, dataList, args.var, args.sel,args.reg,args.flat,binning)
-
-
-
-	xsecRatio = 19.56
-	if not args.log: xsecRatio = xsecRatio/float(10)
-	#sigScale = [1. , xsecRatio*hSigs["ggHH"].GetEntries()/float(hSigs["VBFC2V1"].GetEntries())]
-
+	
 
 	doOverflow = args.overflow
 
-	hGGHHSM = getHisto("GGHHSM",hSigs,doOverflow)
-	#hGGHHSM = getHisto("ggHH_bbtt11",hSigs,doOverflow)
-	#sum the signal channels in a single histo
-	hSignal = hGGHHSM
+
+	if "VBF" in args.sel:
+		hhVBFHHSM = getHisto("VBFHHSM",hSigs,doOverflow)
+		hSignal = hhVBFHHSM
+	else:
+		hGGHHSM = getHisto("GGHHSM",hSigs,doOverflow)
+		hSignal = hGGHHSM
 
 	hDY = getHisto("DYtot",hBkgs,doOverflow)
 	hTT = getHisto("TT",hBkgs,doOverflow)
@@ -613,6 +621,8 @@ if __name__ == "__main__" :
 						h.SetFillStyle(1001)
 				if key == "GGHHSM":
 					h.SetFillStyle(3005)
+				if key == "VBFHHSM":
+					h.SetFillStyle(3004)
 
 	# apply bkg lines colors if available
 	for h in hBkgList:
@@ -688,10 +698,10 @@ if __name__ == "__main__" :
 	bkgStack.SetTitle(plotTitle)
 
 
-	for key in hSigs:
-		intSig = hSigs[key].Integral()
-		if intSig > 0:
-				hSigs[key].Scale(intBkg/intSig)
+	#for key in hSigs:
+	#	intSig = hSigs[key].Integral()
+	#	if intSig > 0:
+	#			hSigs[key].Scale(intBkg/intSig)
 
 	# apply sig scale
 	for i, scale in enumerate (sigScale):

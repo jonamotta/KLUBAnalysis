@@ -5,7 +5,7 @@
 
 # tag is the path to the directory we want to save stuff in
 # THE PATH IS FROM: /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/
-tag=combiner_binOptimization/OptimizedLimit
+tag=plots_2016/TauTau_woIDSF
 log=(--log)
 
 plotter=makeFinalPlots.py
@@ -15,33 +15,33 @@ channel=TauTau
 #channel=ETau
 #channel=MuMu
 
-lumi=59.97
+#lumi=59.97
 reg=SR  # A:SR , B:SStight , C:OSinviso, D:SSinviso, B': SSrlx
 
-sel1=s1b1jresolvedMcut
-sel2=s2b0jresolvedMcut
-sel3=sboostedLLMcut
+#sel1=s1b1jresolvedMcut
+#sel2=s2b0jresolvedMcut
+#sel3=sboostedLLMcut
 #sel4=s0b2j
-sel5=VBFtightMcut
-sel6=VBFlooseMcut
-#sel7=baseline
+#sel5=VBFtightMcut
+#sel6=VBFlooseMcut
+sel7=baseline
 
 # CREATE DIRECTORIES FOR THE SINGLE SELECTIONS
-mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel1
-mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel2
-mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel3
+#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel1
+#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel2
+#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel3
 #mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel4
-mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel5
-mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel6
-#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel7
+#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel5
+#mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel6
+mkdir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel7
 # COPY THE index.php FILE
-cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel1
-cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel2
-cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel3
+#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel1
+#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel2
+#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel3
 #cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel4
-cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel5
-cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel6
-#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel7
+#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel5
+#cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel6
+cp /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/index.php /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag/$sel7
 
 
 others="--quit --ratio --sigscale 1 --no-sig"
@@ -90,10 +90,10 @@ echo $obj1
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel1 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind_log --quit
 
 
 # PLOTS OF SELCECTION2
@@ -113,10 +113,10 @@ python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel2 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind_log --quit
 
 # PLOTS OF SELCECTION3
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_pt --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau1} [Gev]"  $others --quit
@@ -135,10 +135,10 @@ python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel3 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind_log --quit
 
 # PLOTS OF SELCECTION4
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_pt --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau1} [Gev]"  $others --quit
@@ -157,8 +157,8 @@ python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others_log --quit
+#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others --quit
+#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others_log --quit
 #python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} DNN score"  $others --quit
 #python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel4 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} DNN score"  $others_log --quit
 
@@ -179,10 +179,10 @@ python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel5 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind_log --quit
 
 # PLOTS OF SELCECTION6
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_pt --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau1} [Gev]"  $others --quit
@@ -201,29 +201,29 @@ python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
-python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} DNN score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_blind_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel6 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_blind_log --quit
 
 # PLOTS OF SELCECTION7
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau1} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_eta --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#eta_{dau1}"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau2_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau2} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau2_eta --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#eta_{dau2}"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var ditau_deltaR --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#Delta R_{#tau#tau}"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet1_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{bjet1} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet2_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{bjet2} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau1} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau1_eta --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#eta_{#tau_{h}}"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau2_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{dau2} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var dau2_eta --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#eta_{#tau_{h}}"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var ditau_deltaR --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "#Delta R(#tau_{h},#tau_{h})"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet1_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{bjet1} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet2_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_{T}^{bjet2} [Gev]"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet1_bID_deepFlavor --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "b-jet1 b-tag score"  $others --quit
 # python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bjet2_bID_deepFlavor --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "b-jet2 b-tag score"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_SVFIT_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{#tau#tau} SVfit [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{#tau#tau}^{vis} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{#tau#tau} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{bb}^{vis} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others --quit
-# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} BDT score"  $others_log --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} DNN score"  $others --quit
-#python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "ggHH vs t#bar{t} DNN score"  $others_log --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_SVFIT_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{#tau#tau} SVfit [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{#tau#tau}^{vis} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var tauH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{#tau#tau} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_mass --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{bb}^{vis} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var bH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{bb} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_mass_raw --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "m_{HH sys.} [Gev]"  $others --quit
+python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var HH_pt --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "p_T^{HH sys.} [Gev]"  $others --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var BDToutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs t#bar{t} BDT score"  $others_log --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others --quit
+# python scripts/$plotter --dir /home/llr/cms/motta/CMSSW_10_2_16/src/KLUBAnalysis/$tag --var DNNoutSM_kl_1 --reg $reg --sel $sel7 --channel $channel --lymin 0.7 --tag $tag  --label "HH vs Bkg DNN score"  $others_log --quit

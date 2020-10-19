@@ -10,4 +10,5 @@ for subdir, dirs, files in os.walk(rootdir):
             os.system('rm '+os.path.join(subdir, file))
             new_txt = open(os.path.join(subdir, file),"w")
             for line in lines:
-                new_txt.write(line.replace("/gwteraz/users/brivio/", "/data_CMS/cms/motta/HHLegacy_SKIMS/SKIMS_Legacy2016/v2/"))
+                new_txt.write(line.replace("/gwteraz/users/brivio", "/data_CMS/cms/motta/HHLegacy_SKIMS/SKIMS_Legacy2016/v2"))
+            cmd = "chmod 777 "+file

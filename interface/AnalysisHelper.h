@@ -48,8 +48,8 @@ class AnalysisHelper
 
         std::shared_ptr<Sample> openSample(std::string sampleName);
         void prepareHistos();
-        
-        void readSamples(); // inits the samles
+
+        void readSamples(); // inits the samples
         void readSelections();
         void readVariables();
 
@@ -99,7 +99,7 @@ class AnalysisHelper
         std::vector<Selection> selections_;
         std::vector<std::string> variables_;
         std::vector<std::pair<std::string, std::string>> variables2D_;
-        
+
         ordered_map <std::string, std::shared_ptr<Sample>> data_samples_;
         ordered_map <std::string, std::shared_ptr<Sample>> sig_samples_;
         ordered_map <std::string, std::shared_ptr<Sample>> bkg_samples_;
@@ -134,6 +134,6 @@ class get_variant_as_double : public boost::static_visitor<double>
         {
             return (x ? 1.0 : 0.0);
         }
-}; 
+};
 
 #endif
